@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url('/fonts/avenir-next-cyr-medium.ttf');
+}
+
+@font-face {
+  font-family: "Avenir Thin";
+  src: url('/fonts/AvenirNextCyr-Thin.ttf');
+}
+body{
+  background: #f3f3f3;
+}
