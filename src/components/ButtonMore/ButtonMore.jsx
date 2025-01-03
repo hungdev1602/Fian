@@ -4,7 +4,7 @@ import arrow_share from "/images/arrow_share.png"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import "./styles.scss";
-const ButtonMore = ({ text }) => {
+const ButtonMore = ({ text, link }) => {
   const [isOn, setIsOn] = useState(false);
   const toggleSwitch = () => setIsOn(!isOn);
 
@@ -18,7 +18,7 @@ const ButtonMore = ({ text }) => {
     <>
       {/* Thêm class = "switch" vào thẻ cha (phải thêm data-isOn, onMouseEnter, onMouseLeave) */}
       <Link 
-        to={'/'}
+        to={link}
         className="inline-flex items-center justify-between text-[#fff] truncate switch"
         data-isOn={isOn} onMouseEnter={toggleSwitch} onMouseLeave={toggleSwitch}
       >

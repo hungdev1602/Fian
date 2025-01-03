@@ -21,6 +21,9 @@ export default {
     extend: {
       backgroundImage: {
         'bgCommercial': "url('/images/bg-commercial.png')",
+        'bg1': "url('/images/bg-1.png')",
+        'bg2': "url('/images/bg-2.png')",
+        'bg3': "url('/images/bg-3.png')",
       },
     },
   },
