@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import Footer from "./components/Footer/Footer";
 const App = () => {
 
   return (
@@ -10,6 +11,10 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
+      </div>
+
+      <div className="container mx-auto">
+        <Footer />
       </div>
     </>
   )
