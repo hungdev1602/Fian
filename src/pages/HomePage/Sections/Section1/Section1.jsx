@@ -76,6 +76,7 @@ const Section1 = () => {
 
         <ButtonMore 
           text="Подробнее"
+          link={'/'}
         />
       </div>
     </>
