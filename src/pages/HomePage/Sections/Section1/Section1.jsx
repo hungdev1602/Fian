@@ -2,15 +2,47 @@ import Header1 from "../../../../components/Header1/Header1"
 import human_black from "/images/human_black.png"
 import arrow_share from "/images/arrow_share.png"
 import ButtonMore from "../../../../components/ButtonMore/ButtonMore"
+import { useEffect, useState } from "react"
 const Section1 = () => {
-  const temp = `Мы предлагаем полный спектр услуг, доверьтесь 
-  нашему опыту для выгодных инвестиций и 
-  успешного управления объектами.`
+  const [current, setCurrent] = useState(3)
+  const data = [
+    {
+      title: `Мы предлагаем полный спектр услуг, доверьтесь 
+        нашему опыту для выгодных инвестиций и 
+        успешного управления объектами.`,
+      background: "bg-bgCommercial"
+    },
+    {
+      title: `Найдем для вас объекты с минимальными рисками 
+        и доходностью от 15% годовых, где вы заработаете 
+        от 30% на капитализации.`,
+      background: "bg-bgResidential"
+    },
+    {
+      title: `Подберем безрисковую жилую недвижимость по 
+        вашим критериям с возможностью получить 
+        партнерские скидки.`,
+      background: "bg-bgInvestment"
+    },
+    {
+      title: `Согласуем перепланировку по закону и повысим ее 
+        инвестиционную привлекательность.
+        ㅤ`,
+      background: "bg-bgReconstruction"
+    },
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent(prev => prev === data.length - 1 ? 0 : prev + 1)
+    }, 5000)
+    return () => clearInterval(interval)
+  })
   return (
     <>
       <div className="flex justify-between items-start">
         <Header1 />
-        <div className="w-[984px] h-[607px] bg-bgCommercial bg-cover rounded-[20px] relative truncate">
+        <div className={`w-[984px] h-[607px] transition-all duration-1000 ease-linear ${data[current].background} bg-cover rounded-[20px] relative truncate`}>
           {/* contact */}
           <div className="absolute top-[20px] right-[20px] flex gap-[10px]">
             <div className="w-[250px] h-[50px] bg-[#ffffffd6] rounded-[40px] flex items-center justify-center cursor-pointer">Связаться</div>
@@ -24,10 +56,31 @@ const Section1 = () => {
             <div className="text-[27px] font-[400] font-avenirThin text-[#fff] uppercase">FIAN - финансово инвестиционное агентсво недвижимости</div>
             <div className="flex justify-between items-center mt-[20px]">
               <div className="flex items-center gap-[10px]">
-                <div className="w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer bg-[#00000087] text-[#fff]">коммерция</div>
-                <div className="w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer bg-[#ffffffdb]">жилая</div>
-                <div className="w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer bg-[#ffffffdb]">инвестиции</div>
-                <div className="w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer bg-[#ffffffdb]">перепланировка</div>
+                {/* when change data, change bg, if active bg-[#00000087] else bg-[#ffffffdb] */}
+                <div 
+                  onClick={() => setCurrent(0)}
+                  className={`w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer ${current === 0 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                >
+                  коммерция
+                </div>
+                <div 
+                  onClick={() => setCurrent(1)}
+                  className={`w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer ${current === 1 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                >
+                  жилая
+                </div>
+                <div 
+                  onClick={() => setCurrent(2)}
+                  className={`w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer ${current === 2 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                >
+                  инвестиции
+                </div>
+                <div 
+                  onClick={() => setCurrent(3)}
+                  className={`w-[200px] h-[50px] rounded-[40px] flex items-center justify-center cursor-pointer ${current === 3 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                >
+                  перепланировка
+                </div>
               </div>
               <div className="w-[50px] h-[50px] bg-[#fff] rounded-full flex items-center justify-center cursor-pointer">
                 <img src={arrow_share} alt="" className="w-[15px] aspect-square object-cover"/>
@@ -71,7 +124,8 @@ const Section1 = () => {
             <div className="flex-1 h-[1px] bg-[#000]"></div>
           </div>
 
-          <div className="text-[20px] font-[400] whitespace-pre-line leading-[20px] mt-[40px]">{temp}</div>
+          {/* When change data, change text */}
+          <div className="text-[20px] font-[400] whitespace-pre-line leading-[20px] mt-[40px] transition-all duration-[5000ms] ease-in-out">{data[current].title}</div>
         </div>
 
         <ButtonMore 

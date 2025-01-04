@@ -18,7 +18,7 @@ const imageStyle = {
 
 function PartnerCarousel({ backward }) {
   return (
-      <div className="w-full relative mt-[20px] mb-[20px]">
+      <div className="w-full relative mt-[120px] mb-[20px]">
         <div className="">
           <Splide
             options={{
