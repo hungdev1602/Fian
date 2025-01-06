@@ -27,6 +27,8 @@ export default {
         'bg1': "url('/images/bg-1.png')",
         'bg2': "url('/images/bg-2.png')",
         'bg3': "url('/images/bg-3.png')",
+        'bg4': "url('/images/bg-4.png')",
+        'bg5': "url('/images/bg-5.png')",
       },
     },
   },

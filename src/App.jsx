@@ -6,6 +6,9 @@ import CommercialPage from "./pages/CommercialPage/CommercialPage";
 import ResidentialPage from "./pages/ResidentialPage/ResidentialPage";
 import InvestmentPage from "./pages/InvestmentPage/InvestmentPage";
 import ReconstructionPage from "./pages/ReconstructionPage/ReconstructionPage";
+import Case1Page from "./pages/Case1Page/Case1Page";
+import Case2Page from "./pages/Case2Page/Case2Page";
+import Case3Page from "./pages/Case3Page/Case3Page";
 const App = () => {
 
   return (
@@ -18,6 +21,9 @@ const App = () => {
           <Route path="/residential" element={<ResidentialPage />} />
           <Route path="/investment" element={<InvestmentPage />} />
           <Route path="/reconstruction" element={<ReconstructionPage />} />
+          <Route path="/case1" element={<Case1Page />} />
+          <Route path="/case2" element={<Case2Page />} />
+          <Route path="/case3" element={<Case3Page />} />
         </Routes>
       </div>
 

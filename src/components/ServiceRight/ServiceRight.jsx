@@ -36,7 +36,9 @@ const ServiceRight = ({ data }) => {
             <div className="flex items-center justify-between">
               <div className="text-[28px] font-[500] text-[#333] whitespace-pre-line leading-[34px]">{data.desc}</div>
 
-              <button className="w-[350px] h-[75px] bg-[#333333] text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+              {
+                data.hideButton ? '' : <button className="w-[350px] h-[75px] bg-[#333333] text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+              }
             </div>
           </div>
         </div>
