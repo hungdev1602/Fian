@@ -8,7 +8,7 @@ const ServiceRight = ({ data }) => {
 
         <div className="flex justify-between items-start mt-[40px]">
           {/* Left */}
-          <div className="w-[500px] h-full">
+          <div className={`w-[500px] ${data.heightImg} rounded-[20px] truncate`}>
             <img src={data.image} alt="" className="w-full h-full object-cover"/>
           </div>
 

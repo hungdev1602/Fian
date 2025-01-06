@@ -39,7 +39,7 @@ const ServicesTopItem = (props) => {
       </div>
 
       {/* Left content */}
-      <div className="w-[600px] mt-[-685px]">
+      <div className="w-[630px] mt-[-685px]">
         <div className="font-avenir text-[32px] font-[400] uppercase leading-[28.8px]">{dataServiceItemTop.title}</div>
 
         {/* Desc */}
@@ -62,10 +62,10 @@ const ServicesTopItem = (props) => {
           <form className={`w-[500px] p-[20px] rounded-[20px] flex flex-col gap-[20px] mt-[20px] ${dataServiceItemTop.formTextColor}  ${dataServiceItemTop.formColor}`}>
             <div className="text-[18px] font-[400]">[5 прибыльных объектов, которые дадут иксы в 2025]</div>
 
-            <input type="text" className="text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999]" placeholder='Номер телефона'/>
-            <input type="email" className="text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999]" placeholder='Email'/>
+            <input type="text" className={`text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999] ${dataServiceItemTop.placeholderColor}`} placeholder='Номер телефона'/>
+            <input type="email" className={`text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999] ${dataServiceItemTop.placeholderColor}`} placeholder='Email'/>
 
-            <button className="w-[200px] h-[50px] rounded-[40px] bg-[#D6D6D6] text-[20px] font-[400] text-[#000]">Получить</button>
+            <button className={`w-[200px] h-[50px] rounded-[40px] ${dataServiceItemTop.buttonColor} text-[20px] font-[400] ${dataServiceItemTop.buttonTextColor}`}>Получить</button>
           </form>
         </div>
 

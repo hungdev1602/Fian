@@ -12,6 +12,7 @@ const Articles = () => {
             question={'Что такое коммерция'}
             answer={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae.'}
             link={'/article'}
+            check={true}
           />
           <ArticleItem 
             question={'как заработать на коммерции'}

@@ -3,8 +3,8 @@ import { GoArrowUpRight, GoArrowDown  } from "react-icons/go";
 import ButtonMore from "../../../ButtonMore/ButtonMore";
 import { useState } from "react";
 
-const ArticleItem = ({ question, answer, link }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const ArticleItem = ({ question, answer, link, check = false }) => {
+  const [isOpen, setIsOpen] = useState(check);
   return (
     <>
       <div className="w-[520px]">

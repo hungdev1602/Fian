@@ -21,6 +21,8 @@ const CommercialPage = () => {
     formTitle: "Каталог с коммерческой недвижимостью",
     formColor: "bg-[#333333]",
     formTextColor: "text-[#FFFFFFCC]",
+    buttonColor: "bg-[#D6D6D6]",
+    buttonTextColor: "text-[#000]",
     backgroundImg: "bg-bgCommercial",
     cards: ["покупка", "продажа", "упаковка", "габ"]
   }
@@ -132,7 +134,8 @@ const CommercialPage = () => {
     ],
     desc: `Покупка готового арендного бизнеса, 
     который сразу приносит доход.`,
-    buttonText: "Продать"
+    buttonText: "Продать",
+    heightImg: "h-[1251px]"
   }
   return (
     <>
@@ -150,7 +153,8 @@ const CommercialPage = () => {
 
         {/* Section 4 */}
         <ServiceLeft 
-          data={dataServiceLeft}/>
+          data={dataServiceLeft}
+        />
         <FormEmail />
       </div>
     </>

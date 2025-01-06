@@ -8,12 +8,12 @@ const ServiceLeft = ({ data }) => {
 
         <div className="flex justify-between items-start mt-[40px]">
           {/* Left */}
-          <div className="flex-1 flex flex-col mr-[50px]">
+          <div className="flex-1 flex flex-col gap-[40px] mr-[50px]">
             {
               data.info.map((item, index) => (
                 <div 
                   key={index}
-                  className="h-[123px] flex items-center justify-between border-b border-[#aaa]"
+                  className="flex items-center justify-between pb-[25px] border-b border-[#aaa]"
                 >
                   {/* Left */}
                   <div className="flex items-center gap-[20px]">
@@ -28,7 +28,7 @@ const ServiceLeft = ({ data }) => {
             }
 
 
-            <div className="flex items-center justify-between mt-[50px]">
+            <div className="flex items-center justify-between">
               <div className="text-[28px] font-[500] text-[#333] whitespace-pre-line leading-[34px]">{data.desc}</div>
 
               <button className="w-[350px] h-[75px] bg-[#333333] text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
@@ -37,7 +37,7 @@ const ServiceLeft = ({ data }) => {
 
           {/* Right */}
           {/* === */}
-          <div className="w-[500px] h-full">
+          <div className={`w-[500px] ${data.heightImg} rounded-[20px] truncate`}>
             <img src={data.image} alt="" className="w-full h-full object-cover"/>
           </div>
         </div>
