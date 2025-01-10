@@ -8,8 +8,9 @@ const HomePage = () => {
   return (
     <>
       <div className="container mx-auto">
-        <Section1 />
+        <Section1 />  
       </div>
+
       <PartnerCarousel />
       <PartnerCarousel backward={true} />
       <div className="container mx-auto">

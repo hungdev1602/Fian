@@ -9,6 +9,20 @@
   cursor: pointer;
 }
 
+@media (max-width: 1600px) {
+  .switch {
+    width: 200px;
+    height: 50px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .switch {
+    width: 100%;
+  }
+}
+
 .switch[data-isOn="true"] {
   justify-content: space-between;
 }

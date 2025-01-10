@@ -3,7 +3,7 @@ import logo from "/images/logo.svg"
 const Header1 = () => {
   return (
     <>
-      <div className="flex items-center gap-[93px]">
+      <div className="flex items-center gap-[50px] 2xl:gap-[93px]">
         <Link to="/" className="w-[30px] h-[35px]">
           <img 
             src={logo} 
@@ -12,7 +12,7 @@ const Header1 = () => {
           />
         </Link>
 
-        <div className="flex items-center gap-[40px] text-[#494949] text-[18px]">
+        <div className="hidden sm:flex items-center gap-[20px] 2xl:gap-[40px] text-[#494949] text-[14px] 2xl:text-[18px]">
           <Link to="/" className="font-[400]">Главная</Link>
           <Link to="/" className="font-[400]">Кейсы</Link>
           <Link to="/" className="font-[400]">Услуги</Link>
