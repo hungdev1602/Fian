@@ -6,31 +6,32 @@ const Section4 = () => {
     {
       background: 'bg-bg1',
       title: `БЦ ЗАО`,
-      width: `w-[601px]`,
+      width: `w-full lg:w-[380px] xl:w-[400px] 2xl:w-[601px]`,
       cards: ['Коммерческая', 'Покупка'],
       link: `/case1`
     },
     {
       background: 'bg-bg2',
       title: `БЦ СЗАО`,
-      width: `w-[480px]`,
+      width: `w-full lg:w-[300px] xl:w-[330px] 2xl:w-[480px]`,
       cards: ['Коммерческая', 'Покупка'],
       link: `/case2`
     },
     {
       background: 'bg-bg3',
       title: `БЦ Баумонский`,
-      width: `w-[480px]`,
-      cards: ['Продажа ГАБ', 'Капитализация'],
-      link: `/case3`
+      width: `w-full lg:w-[300px] xl:w-[330px] 2xl:w-[480px]`,
+      cards: [window.innerWidth < 1600 ? 'ГАБ' : 'Продажа ГАБ', 'Капитализация'],
+      link: `/case3`,
+      secondary: `ГАБ`
     },
   ]
   return (
     <>
-      <div className="mt-[120px]">
+      <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px]">
         <Title title={'Примеры наших работ'} />
 
-        <div className="flex items-center justify-between mt-[40px]">
+        <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-[20px] lg:gap-0 mt-[20px] sm:mt-[40px]">
           {data.map((item, index) => (
             <Item 
               key={index} 

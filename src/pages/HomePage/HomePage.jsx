@@ -11,8 +11,10 @@ const HomePage = () => {
         <Section1 />  
       </div>
 
-      <PartnerCarousel />
-      <PartnerCarousel backward={true} />
+      <div className="mt-[30px] sm:mt-[120px]">
+        <PartnerCarousel />
+        <PartnerCarousel backward={true} />
+      </div>
       <div className="container mx-auto">
         <Section3 />
         <Section4 />

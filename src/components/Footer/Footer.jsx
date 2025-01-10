@@ -73,36 +73,52 @@ const Footer = () => {
           title: "+7 999 999 99 99"
         },
         {
-          title: "Большая тишинская 8 к1 офис 307"
+          title: "Большая тишинская 8 к1 офис 307",
+          link: `https://yandex.ru/maps/213/moscow/house/bolshoy_tishinskiy_pereulok_8s1/Z04YcwBoSUACQFtvfXt3eXVkbA==/?ll=37.578509%2C55.768827&z=18.5`
         }
       ]
     }
   ]
   return (
     <>
-      <footer className="mb-[50px]">
-        <div className="flex justify-between">
+      <footer className="mb-[50px] relative">
+        <div className="flex justify-normal sm:justify-between flex-wrap md:flex-nowrap gap-[20px] md:gap-0">
           {
             footerData.map((item, index) => (
               <FooterItem 
                 key={index}
                 title={item.title}
                 subMenu={item.subMenu}
+                check={index === footerData.length - 1 ? true : false}
               />
             ))
           }
         </div>
 
-        <div className="flex justify-between items-center mt-[45px]">
+        <div className="hidden sm:flex justify-between items-center mt-[45px]">
           <Link 
             to={'/'}
-            className='text-[14px] font-[500] text-[#c8c8c8]'
+            className='text-[8px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase'
           >
             Политика конфиденциальности
           </Link>
 
-          <div className="text-[14px] font-[500] text-[#c8c8c8]">Fian - финансово - инвестиционное агентство недижимости</div>
-          <div className="text-[14px] font-[500] text-[#c8c8c8]">Made by me on 20th 2024</div>
+          <div className="text-[8px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase">Fian - финансово - инвестиционное агентство недижимости</div>
+          {/* <div className="text-[14px] font-[500] text-[#c8c8c8] uppercase">Made by me on 20th 2024</div> */}
+        </div>
+
+        {/* mobile */}
+        <div className="block sm:hidden w-[157px] absolute bottom-0 right-0 flex flex-col gap-[10px] pl-6">
+          <div className="text-[6px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase">Fian - финансово - инвестиционное агентство недижимости</div>
+          <Link 
+            to={'/'}
+            className='text-[6px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase'
+          >
+            Политика конфиденциальности
+          </Link>
+
+          
+          {/* <div className="text-[14px] font-[500] text-[#c8c8c8] uppercase">Made by me on 20th 2024</div> */}
         </div>
       </footer>
     </>

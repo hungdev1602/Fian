@@ -83,7 +83,7 @@ const Section1 = () => {
                   перепланировка
                 </div>
               </div>
-              <div className="h-[30px] xl:w-[40px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer">
+              <div className="w-[30px] xl:w-[40px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer">
                 <img src={arrow_share} alt="" className="w-[10px] 2xl:w-[15px] aspect-square object-cover"/>
               </div>
             </div>

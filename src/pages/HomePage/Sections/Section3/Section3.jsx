@@ -8,41 +8,49 @@ const Section3 = () => {
       недвижимость`,
       desc: `Покупка, продажа, упаковка, готовые 
       арендные бизнесы для инвесторов`,
-      link: `/commercial`
+      link: `/commercial`,
+      secondary: `Покупка, продажа, упаковка, 
+      габ для инвесторов`
     },
     {
       title: `Жилая 
       недвижимость`,
       desc: `Услуги по покупке и продажи жилой 
       недвижимости`,
-      link: `residential`
+      link: `residential`,
+      secondary: `Услуги по покупке и продажи 
+      жилой недвижимости`
     },
     {
       title: `Инвестиции в 
       недвижимость`,
       desc: `Минимизируем риски и 
       обеспечиваем высокую доходность`,
-      link: `/investment`
+      link: `/investment`,
+      secondary: `Минимизируем риски и 
+      обеспечиваем доходность`
     },
     {
       title: `Перепланировка и 
       реконструкции`,
       desc: `Оптимизируем вашу недвижимость 
-      и повысим ее инвестиционную 
-      привлекательность`,
-      link: `/reconstruction`
+      и повысим ее привлекательность`,
+      link: `/reconstruction`,
+      secondary: `оптимизируем вашу 
+      недвижимость`
     },
   ]
   return (
     <>
-      <div className="mt-[120px]">
+      <div className="mt-[40px] sm:mt-[120px]">
         <Title title={'Услуги'} />
-        <div className="grid grid-cols-4 gap-[20px] mt-[40px]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-[10px] sm:gap-[20px] mt-[20px] sm:mt-[40px]">
           {data.map((item, index) => (
             <ServiceItem 
               title={item.title}
               desc={item.desc}
               link={item.link}
+              secondary={item.secondary}
               key={index}
             />
           ))}

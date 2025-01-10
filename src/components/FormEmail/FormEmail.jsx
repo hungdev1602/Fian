@@ -5,27 +5,27 @@ const FormEmail = () => {
   недвижимость в актив`
   return (
     <>
-      <div className="my-[120px] bg-[#fff] rounded-[20px]">
+      <div className="my-[40px] sm:my-[100px] xl:my-[120px] bg-[#fff] rounded-[20px]">
         <div className="flex justify-between">
           {/* Left */}
-          <div className="w-[460px] py-[40px] pl-[40px]">
-            <div className="text-[20px] font-[400] font-avenir uppercase whitespace-pre-line">{text}</div>
-            <div className="text-[42px] font-[700] text-[#333] font-avenir uppercase mt-[20px]">Контакты</div>
+          <div className="w-full lg:w-[460px] py-[20px] sm:py-[40px] pl-[20px] sm:pl-[40px] pr-[20px] sm:pr-[40px] lg:pr-0">
+            <div className="text-[16px] sm:text-[20px] font-[400] font-avenir uppercase whitespace-pre-line  sm:leading-[18px]">{text}</div>
+            <div className="text-[24px] sm:text-[32px] 2xl:text-[42px] font-[700] text-[#333] font-avenir uppercase mt-[20px] leading-[21px] sm:leading-[28.8px] 2xl:leading-[37.8px]">Контакты</div>
 
             {/* google */}
-            <div className="flex items-center gap-[10px] mt-[20px]">
-              <div className="w-[40px] h-[40px] flex items-center justify-center border border-[#000] rounded-[10px]">
+            <div className="flex items-center gap-[10px] mt-[10px] sm:mt-[20px]">
+              <div className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
                 <FaGoogle />
               </div>
-              <div className="w-[40px] h-[40px] flex items-center justify-center border border-[#000] rounded-[10px]">
+              <div className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
                 <FaGoogle />
               </div>
-              <div className="w-[40px] h-[40px] flex items-center justify-center border border-[#000] rounded-[10px]">
+              <div className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
                 <FaGoogle />
               </div>
             </div>
 
-            <form className="w-full mt-[96px]">
+            <form className="w-full mt-[30px] sm:mt-[60px] 2xl:mt-[96px]">
               <input 
                 type="text" 
                 className="w-full border-b border-[#333] outline-none text-[18px]"
@@ -46,21 +46,21 @@ const FormEmail = () => {
               />
 
               <button 
-                className="w-[250px] h-[60px] bg-[#333] rounded-[40px] text-[24px] text-[#fff] mt-[40px]"
+                className="w-full sm:w-[250px] h-[50px] sm:h-[60px] bg-[#333] rounded-[40px] text-[14px] sm:text-[24px] text-[#fff] mt-[30px] sm:mt-[40px]"
               >
                 Отправить
               </button>
             </form>
 
-            <div className="w-[382px] text-[10px] font-[400] font-avenirThin leading-[9px] mt-[157px]">Отправляя заявку, вы даете согласие на обработку своих персональных данных в соответствии с политикой конфиденциальности.</div>
+            <div className="w-full sm:w-[440px] text-[6px] sm:text-[10px] font-[400] font-avenirThin leading-[9px] mt-[10px] sm:mt-[100px] 2xl:mt-[157px] uppercase">Отправляя заявку, вы даете согласие на обработку своих персональных данных в соответствии с политикой конфиденциальности.</div>
           </div>
 
           {/* Right */}
-          <div className="w-[951px] h-[778px]">
+          <div className="hidden lg:block w-[500px] xl:w-[540px] 2xl:w-[951px] h-[650px] 2xl:h-[778px]">
             <img 
               src={form_email} 
               alt="" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-r-[20px]"
             />
           </div>
         </div>
