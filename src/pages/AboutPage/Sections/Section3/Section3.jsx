@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Title from "../../../../components/Title/Title"
+import SliderAward from "./SliderAward/SliderAward"
 import award1 from "/images/award_1.png"
 import award2 from "/images/award_2.png"
 import award3 from "/images/award_3.png"
@@ -37,7 +38,7 @@ const Section3 = () => {
 
   return (
     <>
-      <div className="container mx-auto mt-[120px]">
+      <div className="container mx-auto mt-[40px] sm:mt-[100px] 2xl:mt-[120px]">
         <Title title="Награды" />
 
         <div className="bg-[#FFFFFFCC] py-[21px] px-[20px] md:px-[70px] hidden sm:flex items-center justify-between gap-[3px] md:gap-[10px] 2xl:gap-0 rounded-[20px] mt-[40px]" id='images'>
@@ -61,6 +62,7 @@ const Section3 = () => {
           </div>
         </div>
 
+        <SliderAward />
         {isOpen && (
           <div className="fixed top-0 left-0 w-full h-full bg-[#00000080] flex items-center justify-center" onClick={handleClose}>
             <div className="relative" onClick={e => e.stopPropagation()}>

@@ -1,6 +1,7 @@
 import Title from "../../../../components/Title/Title"
 import { GoArrowDownRight } from "react-icons/go";
 import ExperienceItem from "./components/ExperienceItem/ExperienceItem";
+import MobileSlider from "./components/MobileSlider/MobileSlider";
 
 const Section2 = () => {
   const experienceData = [
@@ -23,27 +24,27 @@ const Section2 = () => {
   ]
   return (
     <>
-      <div className="mt-[120px]">
+      <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px]">
         <Title title={'Опыт работы'} />
 
-        <div className="mt-[42px] bg-[#fff] pt-[40px] pl-[20px] pr-[40px] pb-[23px] rounded-[20px]">
-          <div className="flex justify-between items-start gap-[28px]">
+        <div className="hidden sm:block mt-[42px] bg-[#fff] pt-[20px] 2xl:pt-[40px] pl-[20px] pr-[20px] 2xl:pr-[40px] pb-[20px] 2xl:pb-[23px] rounded-[20px]">
+          <div className="flex justify-between items-start gap-[16px] 2xl:gap-[28px]">
             {/* Left */}
             <div className="flex items-center gap-[10px]">
-              <div className="text-[28px] font-[400] text-[#000000E5]">[Моя История]</div>
+              <div className="text-[24px] 2xl:text-[28px] font-[400] text-[#000000E5]">[Моя История]</div>
               <GoArrowDownRight className="text-[24px]"/>
             </div>
 
             {/* right */}
-            <div className="flex-1 h-[566px] border-l border-[#808080] pl-[40px]">
+            <div className="flex-1 h-auto 2xl:h-[566px] border-l border-[#808080] pl-[20px] 2xl:pl-[40px]">
               {/* top */}
-              <div className="flex justify-between items-center pb-[20px] border-b border-[#808080]">
+              <div className="flex justify-between items-center gap-[20px] lg:gap-0 flex-wrap lg:flex-nowrap pb-[20px] border-b border-[#808080]">
                 {/* 1 item */}
                 <ExperienceItem 
                   title={experienceData[0].title}
                   desc={experienceData[0].desc}
                 />
-                <div className="h-[170px] border-l border-[#808080]"></div>
+                <div className="hidden lg:block h-[120px] 2xl:h-[170px] border-l border-[#808080]"></div>
                 {/* 2 item */}
                 <ExperienceItem 
                   title={experienceData[1].title}
@@ -52,13 +53,13 @@ const Section2 = () => {
               </div>
 
               {/* bottom */}
-              <div className="flex justify-between items-center mt-[20px]">
+              <div className="flex justify-between items-center gap-[20px] lg:gap-0 flex-wrap lg:flex-nowrap mt-[20px]">
                 {/* 3 item */}
                 <ExperienceItem 
                   title={experienceData[2].title}
                   desc={experienceData[2].desc}
                 />
-                <div className="h-[170px] border-l border-[#808080]"></div>
+                <div className="hidden lg:block h-[120px] 2xl:h-[170px] border-l border-[#808080]"></div>
                 {/* 4 item */}
                 <ExperienceItem 
                   title={experienceData[3].title}
@@ -68,6 +69,8 @@ const Section2 = () => {
             </div>
           </div>
         </div>
+
+        <MobileSlider />
       </div>
     </>
   )

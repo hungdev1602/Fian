@@ -12,7 +12,7 @@ const GalleryCarousel = ({ data }) => {
   };
   return (
     <>
-      <div className="mt-[120px]">
+      <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px]">
         <div className="container mx-auto"><Title title="Галерея проекта" /></div>
 
         <div className="mt-[40px]">

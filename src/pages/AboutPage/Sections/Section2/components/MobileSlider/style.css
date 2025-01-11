@@ -1,0 +1,12 @@
+.splide__arrows{
+  display: none !important;
+}
+
+.splide__pagination{
+  position: absolute;
+  bottom: -30px;
+}
+
+.splide__pagination__page.is-active{
+  background: #333;
+}
