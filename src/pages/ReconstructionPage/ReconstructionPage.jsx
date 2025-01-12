@@ -3,6 +3,8 @@ import FormEmail from "../../components/FormEmail/FormEmail"
 import ServiceRight from "../../components/ServiceRight/ServiceRight"
 import ServicesTopItem from "../../components/ServicesTopItem/ServicesTopItem"
 import reconstruction_1 from "/images/reconstruction_1.png"
+import reconstruction_rotate from "/images/reconstruction_rotate.png"
+
 const ReconstructionPage = () => {
   const dataServiceItemTop = {
     title: "перепланировка и реконструкция",
@@ -22,7 +24,8 @@ const ReconstructionPage = () => {
     buttonColor: "bg-[#D6D6D6]",
     buttonTextColor: "text-[#000]",
     backgroundImg: "bg-bgReconstruction",
-    cards: []
+    cards: [],
+    imgRotate: reconstruction_rotate
   }
   const dataServiceRight = {
     title: "покупка / Продажа коммерческой недвижимости",
@@ -81,12 +84,12 @@ const ReconstructionPage = () => {
   }
   return (
     <>
-      <div className="container mx-auto">
-        {/* Section 1 */}
-        <ServicesTopItem 
-          dataServiceItemTop={dataServiceItemTop}
-        />
-
+      
+      {/* Section 1 */}
+      <ServicesTopItem 
+        dataServiceItemTop={dataServiceItemTop}
+      />
+        <div className="container mx-auto">
         {/* Section 2 */}
         <ServiceRight 
           data={dataServiceRight}

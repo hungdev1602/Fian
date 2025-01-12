@@ -3,6 +3,7 @@ import FormEmail from "../../components/FormEmail/FormEmail"
 import ServiceRight from "../../components/ServiceRight/ServiceRight"
 import ServicesTopItem from "../../components/ServicesTopItem/ServicesTopItem"
 import investment_1 from "/images/investment_1.png"
+import investment_rotate from "/images/investment_rotate.png"
 const InvestmentPage = () => {
   const dataServiceItemTop = {
     title: "Инвестиции в недвижимость",
@@ -23,7 +24,8 @@ const InvestmentPage = () => {
     buttonTextColor: "text-[#000]",
     backgroundImg: "bg-bgInvestment",
     cards: [],
-    placeholderColor: "placeholder-[#DCCDBF]"
+    placeholderColor: "placeholder-[#DCCDBF]",
+    imgRotate: investment_rotate
   }
   const dataServiceRight = {
     title: "покупка / Продажа коммерческой недвижимости",
@@ -90,11 +92,12 @@ const InvestmentPage = () => {
   }
   return (
     <>
+      
+      {/* Section 1 */}
+      <ServicesTopItem 
+        dataServiceItemTop={dataServiceItemTop}
+      />
       <div className="container mx-auto">
-        {/* Section 1 */}
-        <ServicesTopItem 
-          dataServiceItemTop={dataServiceItemTop}
-        />
         {/* Section 2 */}
         <ServiceRight 
           data={dataServiceRight}

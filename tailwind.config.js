@@ -11,7 +11,7 @@ export default {
       'avenirThin': ['Avenir Thin', 'sans-serif'],
     },
     screens: {
-      "xs": "350px",
+      "xs": "380px",
       "sm": "576px",
       "md": "768px",
       "lg": "992px",

@@ -7,6 +7,7 @@ import ServicesTopItem from "../../components/ServicesTopItem/ServicesTopItem"
 import residential_1 from "/images/residential_1.png"
 import residential_2 from "/images/residential_2.png"
 import residential_3 from "/images/residential_3.png"
+import residential_rotate from "/images/residential_rotate.png"
 const ResidentialPage = () => {
   const dataServiceItemTop = {
     title: "жилая недвижимость",
@@ -26,7 +27,8 @@ const ResidentialPage = () => {
     buttonColor: "bg-[#333]",
     buttonTextColor: "text-[#fff]",
     backgroundImg: "bg-bgResidential",
-    cards: ["новостройки", "вторичка"]
+    cards: ["новостройки", "вторичка"],
+    imgRotate: residential_rotate
   }
   const dataServiceRight = {
       title: "покупка / Продажа коммерческой недвижимости",
@@ -187,11 +189,12 @@ const ResidentialPage = () => {
   }
   return (
     <>
+      
+      {/* Section 1 */}
+      <ServicesTopItem 
+        dataServiceItemTop={dataServiceItemTop}
+      />
       <div className="container mx-auto">
-        {/* Section 1 */}
-        <ServicesTopItem 
-          dataServiceItemTop={dataServiceItemTop}
-        />
         {/* Section 2 */}
         <ServiceRight 
           data={dataServiceRight}

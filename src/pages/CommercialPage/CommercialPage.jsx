@@ -5,6 +5,8 @@ import ServiceRight from "../../components/ServiceRight/ServiceRight"
 import ServicesTopItem from "../../components/ServicesTopItem/ServicesTopItem"
 import commercial_1 from "/images/commercial_1.png"
 import commercial_2 from "/images/commercial_2.png"
+import commercial_rotate from "/images/commercial_rotate.png"
+
 const CommercialPage = () => {
   const dataServiceItemTop = {
     title: "Коммерческая недвижимость",
@@ -24,7 +26,8 @@ const CommercialPage = () => {
     buttonColor: "bg-[#D6D6D6]",
     buttonTextColor: "text-[#000]",
     backgroundImg: "bg-bgCommercial",
-    cards: ["покупка", "продажа", "упаковка", "габ"]
+    cards: ["покупка", "продажа", "упаковка", "габ"],
+    imgRotate: commercial_rotate
   }
 
   const dataServiceRight = {
@@ -139,11 +142,12 @@ const CommercialPage = () => {
   }
   return (
     <>
+      
+      {/* Section 1 */}
+      <ServicesTopItem 
+        dataServiceItemTop={dataServiceItemTop}
+      />
       <div className="container mx-auto">
-        {/* Section 1 */}
-        <ServicesTopItem 
-          dataServiceItemTop={dataServiceItemTop}
-        />
         {/* Section 2 */}
         <ServiceRight 
           data={dataServiceRight}
