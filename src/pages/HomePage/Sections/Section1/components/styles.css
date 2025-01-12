@@ -31,3 +31,8 @@
   height: 30px !important;
   border-radius: 60px !important;
 }
+
+.rotate{
+  transform: rotate(15deg);
+  transform-origin: center center;
+}

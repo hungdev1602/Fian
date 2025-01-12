@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      <div className="mt-[65px]">
+      <div className="mt-[20px] sm:mt-[65px]">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

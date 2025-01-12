@@ -7,9 +7,7 @@ import Section4 from "./Sections/Section4/Section4"
 const HomePage = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <Section1 />  
-      </div>
+      <Section1 />  
 
       <div className="mt-[30px] sm:mt-[120px]">
         <PartnerCarousel />
