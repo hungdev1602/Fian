@@ -13,6 +13,7 @@ import slider_4 from "/images/case1_slider-4.png"
 import slider_5 from "/images/case1_slider-5.png"
 import slider_6 from "/images/case1_slider-6.png"
 import slider_7 from "/images/case1_slider-7.png"
+import case_1_rotate from "/images/case_1_rotate.png"
 const Case1Page = () => {
   const dataServiceItemTop = {
     title: "Покупка офиса в бц зао",
@@ -31,7 +32,8 @@ const Case1Page = () => {
     solution: `Покупка помещения по всем запросам 
     с выгодой в 35 000 000 рублей.`,
     backgroundImg: "bg-bg1",
-    cards: ["коммерция", "покупка"]
+    cards: ["коммерция", "покупка"],
+    imgRotate: case_1_rotate
   }
   const dataServiceRight = {
       title: "Условия и цифры",
@@ -52,7 +54,7 @@ const Case1Page = () => {
       критериям, однако подходящих вариантов не нашлось. В результате 
       клиент принял решение приобрести помещение.`,
       buttonText: "Модернизировать",
-      heightImg: "h-[334px]",
+      heightImg: "h-[187px] sm:h-[143px] md:h-[163px] lg:h-[270px] 2xl:h-[334px]",
       hideButton: true
   }
   const processData = {
@@ -65,29 +67,30 @@ const Case1Page = () => {
       image: case1_2,
       info: [
         {
-          title: "Выгода 35 миллионов рублей",
+          title: window.innerWidth < 576 ? "Выгода 35 млн. рублей" : "Выгода 35 миллионов рублей",
           desc: `Соседнее помещение с худшими 
           характеристиками с площадью 230 кв.м. 
           стоило на 35 000 000 рублей дороже.`
         },
         {
-          title: "оформленная сделка за 1 неделю",
+          title: window.innerWidth < 576 ? "Сделка за 1 неделю" : "оформленная сделка за 1 неделю",
           desc: `Скорость и профессионализм 
           обеспечивают наилучший результат.`
         }
       ],
       buttonText: "Консультация",
-      heightImg: "h-[329px]"
+      heightImg: "h-[160px] sm:h-[233px] lg:h-[274px] 2xl:h-[329px]",
+      check: true
   }
   const sliderData = [slider_1, slider_2, slider_3, slider_4, slider_5, slider_6, slider_7]
   return (
     <>
+      
+      {/* Section 1 */}
+      <CaseTopItem 
+        dataServiceItemTop={dataServiceItemTop}
+      />
       <div className="container mx-auto">
-        {/* Section 1 */}
-        <CaseTopItem 
-          dataServiceItemTop={dataServiceItemTop}
-        />
-
         {/* Section 2 */}
         <ServiceRight 
           data={dataServiceRight}

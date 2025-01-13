@@ -55,16 +55,32 @@ const ServiceRight = ({ data }) => {
                 />
               ))
             }
+            {
+              data.hideButton &&
+              <>
+                <div className="flex items-center justify-between mt-0 lg:mt-[-20px] 2xl:mt-0">
+                  <div className="text-[12px] lg:text-[20px] 2xl:text-[28px] font-[500] text-[#333] whitespace-pre-line leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+
+                  {
+                    data.hideButton ? '' : <button className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+                  }
+                </div>
+              </>
+            }
           </div>
           
         </div>
-        <div className="flex md:hidden items-center justify-between mt-[20px]">
-          <div className="w-[180px] text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+        {
+          !data.hideButton && 
+          <div className="flex md:hidden items-center justify-between mt-[20px]">
+            <div className="w-[180px] text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
-          {
-            data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
-          }
-        </div>
+            {
+              data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+            }
+          </div>
+        }
+        
       </div>
     </>
   )

@@ -13,6 +13,8 @@ import slider_4 from "/images/case3_slider-4.png"
 import slider_5 from "/images/case3_slider-5.png"
 import slider_6 from "/images/case3_slider-6.png"
 import slider_7 from "/images/case3_slider-7.png"
+import case_3_rotate from "/images/case_3_rotate.png"
+
 const Case3Page = () => {
   const dataServiceItemTop = {
     title: "БЦ «Баумонский»",
@@ -31,7 +33,8 @@ const Case3Page = () => {
     solution: `Покупка помещения, стоимостью 
     19 000 000 рублей с разделением на два.`,
     backgroundImg: "bg-bg5",
-    cards: ["продажа ГАБ", "капитализация"]
+    cards: ["продажа ГАБ", "капитализация"],
+    imgRotate: case_3_rotate
   }
   const dataServiceRight = {
     title: "цифры",
@@ -57,7 +60,7 @@ const Case3Page = () => {
     ],
     desc: ``,
     buttonText: "Модернизировать",
-    heightImg: "h-[446px]",
+    heightImg: "h-[189px] sm:h-[201px] lg:h-[400px] 2xl:h-[446px]",
     hideButton: true
   }
   const processData = {
@@ -81,17 +84,18 @@ const Case3Page = () => {
         }
       ],
       buttonText: "Консультация",
-      heightImg: "h-[307px]"
+      heightImg: "h-[160px] sm:h-[175px] lg:h-[267px] 2xl:h-[307px]",
+      check: true
   }
   const sliderData = [slider_1, slider_2, slider_3, slider_4, slider_5, slider_6, slider_7]
   return (
     <>
+      
+      {/* Section 1 */}
+      <CaseTopItem 
+        dataServiceItemTop={dataServiceItemTop}
+      />
       <div className="container mx-auto">
-        {/* Section 1 */}
-        <CaseTopItem 
-          dataServiceItemTop={dataServiceItemTop}
-        />
-
         {/* Section 2 */}
         <ServiceRight 
           data={dataServiceRight}

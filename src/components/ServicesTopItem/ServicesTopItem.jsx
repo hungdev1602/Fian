@@ -2,7 +2,6 @@
 import Header1 from "../Header1/Header1"
 import human_black from "/images/human_black.png"
 import logo_rotate from "/images/logo_rotate.png"
-import commercial_rotate from "/images/commercial_rotate.png"
 
 const ServicesTopItem = (props) => {
   const {

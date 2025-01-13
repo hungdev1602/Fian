@@ -51,6 +51,16 @@ const ServiceLeft = ({ data }) => {
                 />
               ))
             }
+            {
+              data.check &&
+              <div className="block md:hidden items-center justify-between mt-[20px]">
+                <div className="w-auto text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+
+                {
+                  data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+                }
+              </div>
+            }
           </div>
 
           {/* Right */}
@@ -59,13 +69,16 @@ const ServiceLeft = ({ data }) => {
             <img src={data.image} alt="" className="w-full h-full object-cover"/>
           </div>
         </div>
-        <div className="flex md:hidden items-center justify-between mt-[20px]">
-          <div className="w-[180px] text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+        {
+          !data.check &&
+          <div className="flex md:hidden items-center justify-between mt-[20px]">
+            <div className="w-[180px] text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
-          {
-            data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
-          }
-        </div>
+            {
+              data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+            }
+          </div>
+        }
       </div>
     </>
   )
