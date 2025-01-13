@@ -55,7 +55,7 @@ const ServicesTopItem = (props) => {
       
       {
         dataServiceItemTop.cards.length > 0 &&
-        <div className="flex gap-[5px] sm:hidden bg-[#797979] py-[10px] pl-[25px] pr-[25px] h-[50px] text-white">
+        <div className="flex gap-[5px] sm:hidden bg-[#797979] py-[10px] pl-[10px] pr-[10px] h-[50px] text-white">
           {
             dataServiceItemTop.cards.map((item, index) => (
               <div 

@@ -9,11 +9,13 @@ import ReconstructionPage from "./pages/ReconstructionPage/ReconstructionPage";
 import Case1Page from "./pages/Case1Page/Case1Page";
 import Case2Page from "./pages/Case2Page/Case2Page";
 import Case3Page from "./pages/Case3Page/Case3Page";
+import ScrollToTop from "./ScrollToTop";
 const App = () => {
 
   return (
     <>
       <div className="mt-[20px] sm:mt-[65px]">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

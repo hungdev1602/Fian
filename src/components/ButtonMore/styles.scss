@@ -22,6 +22,9 @@
     width: 100%;
     height: 40px;
   }
+  .switch[customWidth="yeah"]{
+    width: 165px;
+  }
 }
 
 .switch[data-isOn="true"] {
