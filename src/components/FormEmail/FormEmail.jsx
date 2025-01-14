@@ -1,11 +1,11 @@
 import { FaGoogle } from "react-icons/fa";
 import form_email from "/images/form_email.png"
-const FormEmail = () => {
+const FormEmail = ({ check = false }) => {
   const text = `Превратим вашу
   недвижимость в актив`
   return (
     <>
-      <div className="my-[40px] sm:my-[100px] xl:my-[120px] bg-[#fff] rounded-[20px]">
+      <div className={`my-[40px] sm:my-[100px] xl:my-[120px] ${check ? "bg-[#F3F3F3]" : "bg-white"} rounded-[20px]`}>
         <div className="flex justify-between">
           {/* Left */}
           <div className="w-full lg:w-[460px] py-[20px] sm:py-[40px] pl-[20px] sm:pl-[40px] pr-[20px] sm:pr-[40px] lg:pr-0">
@@ -28,19 +28,19 @@ const FormEmail = () => {
             <form className="w-full mt-[30px] sm:mt-[60px] 2xl:mt-[96px]">
               <input 
                 type="text" 
-                className="w-full border-b border-[#333] outline-none text-[18px]"
+                className="w-full border-b border-[#333] outline-none text-[18px] bg-transparent"
                 placeholder="Имя" 
                 required
               />
               <input 
                 type="text" 
-                className="w-full border-b border-[#333] outline-none text-[18px] mt-[20px]"
+                className="w-full border-b border-[#333] outline-none text-[18px] mt-[20px] bg-transparent"
                 placeholder="Номер телефона" 
                 required
               />
               <input 
                 type="email" 
-                className="w-full border-b border-[#333] outline-none text-[18px] mt-[20px]"
+                className="w-full border-b border-[#333] outline-none text-[18px] mt-[20px] bg-transparent"
                 placeholder="Email" 
                 required
               />

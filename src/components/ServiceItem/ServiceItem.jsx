@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import ButtonMore from "../ButtonMore/ButtonMore"
 
-const ServiceItem = ({ title, desc, link, secondary }) => {
+const ServiceItem = ({ title, desc, link, secondary, check=false, setOpenBurgerMenu }) => {
   return (
     <>
-      <div className="w-auto lg:w-[260px] 2xl:w-[390px] h-[164px] sm:h-[240px] 2xl:h-[268px] bg-[#fff] rounded-[20px] pt-[20px] px-[10px] 2xl:px-[23px] text-center relative">
+      <div className={`w-auto lg:w-[260px] 2xl:w-[390px] h-[164px] sm:h-[240px] 2xl:h-[268px] rounded-[20px] pt-[20px] px-[10px] 2xl:px-[23px] text-center relative ${check ? "bg-[#F3F3F3]" : "bg-white"}`}>
         <div className="text-[12px] sm:text-[21px] 2xl:text-[28px] font-[400] font-avenir leading-[19px] sm:leading-[29.4px] 2xl:leading-[34.3px] uppercase whitespace-pre-line sm:whitespace-normal 2xl:whitespace-pre-line">
           {title}
         </div>
@@ -16,6 +16,8 @@ const ServiceItem = ({ title, desc, link, secondary }) => {
           <ButtonMore 
             text={'Подробнее'}
             link={link}
+            check={check}
+            setOpenBurgerMenu={setOpenBurgerMenu}
           />
         </div>
       </div>

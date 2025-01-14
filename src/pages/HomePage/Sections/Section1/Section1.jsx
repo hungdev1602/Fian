@@ -7,7 +7,7 @@ import SliderSwipwe from "./components/SliderSwipwe"
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 const Section1 = () => {
-  const [current, setCurrent] = useState(3)
+  const [current, setCurrent] = useState(0)
   const data = [
     {
       title: `Мы предлагаем полный спектр услуг, доверьтесь 

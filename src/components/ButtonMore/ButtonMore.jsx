@@ -4,7 +4,7 @@ import arrow_share from "/images/arrow_share.png"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import "./styles.scss";
-const ButtonMore = ({ text, link, customWidth = false }) => {
+const ButtonMore = ({ text, link, customWidth = false, check, setOpenBurgerMenu }) => {
   const [isOn, setIsOn] = useState(false);
   const toggleSwitch = () => setIsOn(!isOn);
 
@@ -22,6 +22,7 @@ const ButtonMore = ({ text, link, customWidth = false }) => {
         className="inline-flex items-center justify-between text-[#fff] switch"
         data-isOn={isOn} onMouseEnter={toggleSwitch} onMouseLeave={toggleSwitch}
         customWidth={customWidth ? "yeah" : "nope"}
+        onClick={check ? () => setOpenBurgerMenu(false) : null}
       >
         {isOn && <div className="text-[18px] 2xl:text-[24px] font-[500] pl-[10px] 2xl:pl-0">{text}</div>}
         {/* Thêm motion. trước thẻ (phải thêm layout transition) */}

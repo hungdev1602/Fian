@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 import arrow_share from "/images/arrow_share.png"
-const Item = ({ background, width, title, cards, link }) => {
+const Item = ({ background, width, title, cards, link, setIsOpen, check = false }) => {
   return (
     <>
       <div className={`${width} h-[300px] 2xl:h-[500px] ${background} bg-cover rounded-[20px] truncate relative`}>
@@ -26,6 +26,7 @@ const Item = ({ background, width, title, cards, link }) => {
             <Link 
               to={link} 
               className="w-[30px] sm:w-[40px] 2xl:w-[50px] aspect-square flex items-center justify-center bg-[#fff] rounded-full cursor-pointer"
+              onClick={check ? () => setIsOpen(false) : null}
             >
               <img 
                 src={arrow_share} 
