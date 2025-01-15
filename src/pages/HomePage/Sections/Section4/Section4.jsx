@@ -28,7 +28,7 @@ const Section4 = () => {
   ]
   return (
     <>
-      <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px]">
+      <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px]" id="cases">
         <Title title={'Примеры наших работ'} />
 
         <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-[20px] lg:gap-0 mt-[20px] sm:mt-[40px]">

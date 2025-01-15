@@ -81,7 +81,7 @@ const Footer = () => {
   ]
   return (
     <>
-      <footer className="mb-[50px] relative">
+      <footer className="mb-[50px] relative" id='footer'>
         <div className="flex justify-normal sm:justify-between flex-wrap md:flex-nowrap gap-[20px] md:gap-0">
           {
             footerData.map((item, index) => (

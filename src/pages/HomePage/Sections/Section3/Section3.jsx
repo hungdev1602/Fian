@@ -42,7 +42,7 @@ const Section3 = () => {
   ]
   return (
     <>
-      <div className="mt-[40px] sm:mt-[120px]">
+      <div className="mt-[40px] sm:mt-[120px]" id="services">
         <Title title={'Услуги'} />
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-[10px] sm:gap-[20px] mt-[20px] sm:mt-[40px]">
           {data.map((item, index) => (
