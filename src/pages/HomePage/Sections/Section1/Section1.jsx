@@ -6,8 +6,12 @@ import { useEffect, useState } from "react"
 import SliderSwipwe from "./components/SliderSwipwe"
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import "./style.css"
+import { Link } from "react-router-dom"
 const Section1 = () => {
   const [current, setCurrent] = useState(0)
+  const [slideIn, setSlideIn] = useState(true);
+  const [slideOut, setSlideOut] = useState(false);
   const data = [
     {
       title: `Мы предлагаем полный спектр услуг, доверьтесь 
@@ -38,19 +42,45 @@ const Section1 = () => {
       link: '/reconstruction'
     },
   ]
+  const images = ["url('/images/bg-commercial.png')", 
+    "url('/images/bg-residential.png')",
+    "url('/images/bg-investment.png')",
+    "url('/images/bg-reconstruction.png')"
+  ]
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent(prev => prev === data.length - 1 ? 0 : prev + 1)
-    }, 5000)
+      setSlideOut(true); // Kích hoạt hiệu ứng slide-out
+      setTimeout(() => {
+        setCurrent(prev => prev === data.length - 1 ? 0 : prev + 1)
+        setSlideOut(false); // Đặt slideOut về false sau khi đã thay đổi hình ảnh
+        setSlideIn(true); // Kích hoạt hiệu ứng slide-in
+      }, 500); // Thời gian nhỏ để đảm bảo hiệu ứng được kích hoạt
+    }, 6000)
     return () => clearInterval(interval)
-  })
+  },)
+
+  const handleClick = (number) => {
+    setSlideOut(true);
+    setCurrent(number);
+    setTimeout(() => {
+      setSlideOut(false);
+      setSlideIn(true);
+    }, 500);
+  }
   return (
     <>
       <div className="container mx-auto">
         <div className="flex justify-between flex-wrap lg:flex-nowrap items-start gap-[15px] lg:gap-0">
           <Header1 />
-          <div className={`hidden sm:block w-full lg:w-[480px] xl:w-[576px] 2xl:w-[984px] h-[430px] xl:h-[527px] 2xl:h-[607px] transition-all duration-1000 ease-linear ${data[current].background} bg-cover rounded-[20px] relative truncate`}>
+          <div 
+            className={`hidden sm:block w-full lg:w-[480px] xl:w-[576px] 2xl:w-[984px] h-[430px] xl:h-[527px] 2xl:h-[607px] bg-cover rounded-[20px] relative truncate`}
+          >
+            <div 
+              className={`images ${slideOut ? 'slide-out' : ''} ${slideIn ? 'slide-in' : ''}`}
+              style={{backgroundImage: images[current]}}
+            />
+            
             {/* contact */}
             <div className="absolute top-[10px] 2xl:top-[20px] right-[10px] 2xl:right-[20px] flex gap-[10px]">
               <div className="w-[150px] 2xl:w-[250px] h-[40px] 2xl:h-[50px] bg-[#ffffffd6] rounded-[40px] flex items-center justify-center cursor-pointer">Связаться</div>
@@ -66,33 +96,33 @@ const Section1 = () => {
                 <div className="flex items-center gap-[10px]">
                   {/* when change data, change bg, if active bg-[#00000087] else bg-[#ffffffdb] */}
                   <div 
-                    onClick={() => setCurrent(0)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[14px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 0 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    onClick={() => handleClick(0)}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 0 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     коммерция
                   </div>
                   <div 
-                    onClick={() => setCurrent(1)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[14px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 1 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    onClick={() => handleClick(1)}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 1 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     жилая
                   </div>
                   <div 
-                    onClick={() => setCurrent(2)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[14px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 2 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    onClick={() => handleClick(2)}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 2 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     инвестиции
                   </div>
                   <div 
-                    onClick={() => setCurrent(3)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[14px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 3 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    onClick={() => handleClick(3)}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 3 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     перепланировка
                   </div>
                 </div>
-                <div className="w-[30px] xl:w-[40px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer">
+                <Link to={data[current].link} className="w-[30px] xl:w-[40px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer">
                   <img src={arrow_share} alt="" className="w-[10px] 2xl:w-[15px] aspect-square object-cover"/>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -147,7 +177,7 @@ const Section1 = () => {
 
       {/* Left content */}
       <div className="container mx-auto">
-        <div className="w-full lg:w-[474px] 2xl:w-[543px] mt-[30px] lg:mt-[-375px] xl:mt-[-460px] 2xl:mt-[-519px]">
+        <div className="w-full lg:w-[474px] 2xl:w-[543px] mt-[30px] lg:mt-[-375px] xl:mt-[-460px] 2xl:mt-[-519px] truncate">
           <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[400] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px]">Ваш путь к</div>
           <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[700] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] text-[#333] mt-0 sm:mt-[10px]">идеальной недвижимости</div>
           <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[400] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] mt-0 sm:mt-[10px]">начинается здесь</div>
@@ -181,7 +211,11 @@ const Section1 = () => {
             </div>
   
             {/* When change data, change text */}
-            <div className="text-[14px] xl:text-[18px] 2xl:text-[20px] font-[400] whitespace-pre-line leading-[16px] sm:leading-[18px] 2xl:leading-[20px] mt-[10px] sm:mt-[20px] 2xl:mt-[40px] transition-all duration-[5000ms] ease-in-out">{data[current].title}</div>
+            <div 
+              className={`reg-text ${slideOut ? 'slide-out' : ''} ${slideIn ? 'slide-in' : ''} relative text-[14px] xl:text-[18px] 2xl:text-[20px] font-[400] whitespace-pre-line leading-[16px] sm:leading-[18px] 2xl:leading-[20px] mt-[10px] sm:mt-[20px] 2xl:mt-[40px] transition-all duration-[5000ms] ease-in-out`}
+            >
+              {data[current].title}
+            </div>
           </div>
   
           <ButtonMore 

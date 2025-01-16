@@ -1,0 +1,35 @@
+.images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; /* Bắt đầu từ bên trái */
+  background-size: cover;
+  background-position: center;
+}
+
+.images.slide-in, .reg-text.slide-in {
+  animation: slide-in 2s forwards; /* Chạy animation */
+}
+
+.images.slide-out, .reg-text.slide-out {
+  animation: slide-out 2s forwards; /* Chạy animation slide-out */
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%; /* Bắt đầu từ bên trái */
+  }
+  100% {
+    left: 0; /* Kết thúc ở giữa */
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    left: 0; /* Bắt đầu ở giữa */
+  }
+  100% {
+    left: 300%; /* Kết thúc ra bên phải */
+  }
+}
