@@ -126,7 +126,7 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <SliderSwipwe />
+          <SliderSwipwe current={current}/>
         </div>
       </div>
 

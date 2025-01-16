@@ -13,7 +13,12 @@ import img1 from "/images/bg-commercial.png"
 import img2 from "/images/bg-investment.png"
 import img3 from "/images/bg-reconstruction.png"
 import img4 from "/images/bg-residential.png"
-const SliderSwipwe = () => {
+import { useEffect, useRef } from 'react';
+const SliderSwipwe = ({ current }) => {
+  const swiperRef = useRef(null)
+  useEffect(() => {
+    swiperRef.current.swiper.slideTo(current);
+  }, [current])
   return (
     <>
       <div className="block sm:hidden w-full relative mb-[30px]">
@@ -22,22 +27,10 @@ const SliderSwipwe = () => {
         </div>
         <div className='rotate'>
           <Swiper
+            ref={swiperRef}
             effect={'cards'}
             grabCursor={true}
-            loop={true} //important for autoplay
             speed={2000} //important for autoplay
-            autoplay={{ //important for autoplay
-              // enabled: true,
-              delay: 5000,
-              disableOnInteraction: false
-            }}
-            pagination={{
-              el: ".swiper-pagination",
-              clickable: true,
-              renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + 'коммерция' + "</span>";
-              }
-            }}
             modules={[EffectCards, Autoplay, Pagination]}
             className="mySwiper"
           >
