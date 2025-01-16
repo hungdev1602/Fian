@@ -143,7 +143,7 @@ const Section1 = () => {
           <SplideSlide>
             <div 
               className={`w-[120px] h-[30px] flex items-center justify-center text-[13px] font-avenirThin rounded-[60px] ${current === 0 ? "bg-[#333333e3] text-[#fff]" : "border border-[#fff] bg-transparent"} `}
-              onClick={() => setCurrent(0)}
+              onClick={() => handleClick(0)}
             >
               коммерция
             </div>
@@ -151,7 +151,7 @@ const Section1 = () => {
           <SplideSlide>
             <div 
               className={`w-[120px] h-[30px] flex items-center justify-center text-[13px] font-avenirThin rounded-[60px] ${current === 1 ? "bg-[#333333e3] text-[#fff]" : "border border-[#fff] bg-transparent"} `}
-              onClick={() => setCurrent(1)}
+              onClick={() => handleClick(1)}
             >
               жилая
             </div>
@@ -159,7 +159,7 @@ const Section1 = () => {
           <SplideSlide>
             <div 
               className={`w-[120px] h-[30px] flex items-center justify-center text-[13px] font-avenirThin rounded-[60px] ${current === 2 ? "bg-[#333333e3] text-[#fff]" : "border border-[#fff] bg-transparent"} `}
-              onClick={() => setCurrent(2)}
+              onClick={() => handleClick(2)}
             >
               инвестиции
             </div>
@@ -167,7 +167,7 @@ const Section1 = () => {
           <SplideSlide>
             <div 
               className={`w-[120px] h-[30px] flex items-center justify-center text-[13px] font-avenirThin rounded-[60px] ${current === 3 ? "bg-[#333333e3] text-[#fff]" : "border border-[#fff] bg-transparent"} `}
-              onClick={() => setCurrent(3)}
+              onClick={() => handleClick(3)}
             >
               перепланировка
             </div>
