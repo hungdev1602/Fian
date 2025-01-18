@@ -6,13 +6,19 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import partner1 from '/images/partner_1.png';
 import partner2 from '/images/partner_2.png';
 import partner3 from '/images/partner_3.png';
+import partner4 from '/images/partner_4.png';
+import partner5 from '/images/partner_5.png';
+import partner6 from '/images/partner_6.png';
+import partner7 from '/images/partner_7.png';
+import partner8 from '/images/partner_8.png';
+import partner9 from '/images/partner_9.png';
 // npm install @splidejs/react-splide
 // npm install @splidejs/splide-extension-auto-scroll
 
 // Define the style for the images in the carousel
 const imageStyle = {
-  width: '250px',
-  height: '100px',
+  width: '200px',
+  height: '40px',
   borderRadius: '20px',
 };
 
@@ -31,8 +37,8 @@ function PartnerCarousel({ backward }) {
             },
             arrows: false, // Hide navigation arrows
             pagination: false, // Hide pagination dots
-            fixedWidth: '300px', // Fixed width for each slide
-            gap: '40px', // Gap between slides
+            fixedWidth: '200px', // Fixed width for each slide
+            gap: '20px', // Gap between slides
             direction: backward ? 'rtl' : 'ltr',
           }}
           extensions={{ AutoScroll }} // Use the AutoScroll extension
@@ -47,13 +53,19 @@ function PartnerCarousel({ backward }) {
             <img src={partner3} alt="Poster Navada" style={imageStyle} />
           </SplideSlide>
           <SplideSlide>
-            <img src={partner1} alt="Poster Brooklyn" style={imageStyle} />
+            <img src={partner4} alt="Poster Brooklyn" style={imageStyle} />
           </SplideSlide>
           <SplideSlide>
-            <img src={partner2} alt="Poster Macao" style={imageStyle} />
+            <img src={partner5} alt="Poster Macao" style={imageStyle} />
           </SplideSlide>
           <SplideSlide>
-            <img src={partner3} alt="Poster Navada" style={imageStyle} />
+            <img src={partner6} alt="Poster Navada" style={imageStyle} />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={partner7} alt="Poster Navada" style={imageStyle} />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={partner8} alt="Poster Navada" style={imageStyle} />
           </SplideSlide>
         </Splide>
       </div>

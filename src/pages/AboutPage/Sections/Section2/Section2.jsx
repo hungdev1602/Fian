@@ -31,7 +31,7 @@ const Section2 = () => {
           <div className="flex justify-between items-start gap-[16px] 2xl:gap-[28px]">
             {/* Left */}
             <div className="flex items-center gap-[10px]">
-              <div className="text-[24px] 2xl:text-[28px] font-[400] text-[#000000E5]">[Моя История]</div>
+              <div className="text-[24px] 2xl:text-[28px] font-[400] text-[#303030]">[Моя История]</div>
               <GoArrowDownRight className="text-[24px]"/>
             </div>
 

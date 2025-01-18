@@ -13,7 +13,7 @@ const FooterItem = ({ title, subMenu = [], check = false }) => {
               <Link 
                 key={index}
                 to={item.link}
-                className="text-[12px] sm:text-base 2xl:text-[18px] font-[400] text-[#797979]"
+                className="text-[12px] sm:text-base 2xl:text-[18px] font-[400] text-[#7A7A7A]"
               >
                 {item.title}
               </Link>

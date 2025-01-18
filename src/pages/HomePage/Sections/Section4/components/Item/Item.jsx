@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 import arrow_share from "/images/arrow_share.png"
+import arrow_share_white from "/images/arrow_share_white.png"
 const Item = ({ background, width, title, cards, link, setIsOpen, check = false }) => {
   return (
     <>
@@ -25,13 +26,18 @@ const Item = ({ background, width, title, cards, link, setIsOpen, check = false 
 
             <Link 
               to={link} 
-              className="w-[30px] sm:w-[40px] 2xl:w-[50px] aspect-square flex items-center justify-center bg-[#fff] rounded-full cursor-pointer"
+              className="w-[30px] sm:w-[40px] 2xl:w-[50px] aspect-square flex items-center justify-center bg-[#fff] rounded-full cursor-pointer transition-all duration-200 hover:bg-[#000000CC] group"
               onClick={check ? () => setIsOpen(false) : null}
             >
               <img 
                 src={arrow_share} 
                 alt="" 
-                className="w-[12px] 2xl:w-[15px] aspect-square object-cover"
+                className="w-[12px] 2xl:w-[15px] aspect-square object-cover block group-hover:hidden"
+              />
+              <img 
+                src={arrow_share_white} 
+                alt="" 
+                className="w-[12px] 2xl:w-[15px] aspect-square object-cover hidden group-hover:block"
               />
             </Link>
           </div>

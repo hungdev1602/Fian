@@ -9,6 +9,7 @@ export default {
       'sans': ['Inter', 'sans-serif'],
       'avenir': ['Avenir Next Cyr', 'sans-serif'],
       'avenirThin': ['Avenir Thin', 'sans-serif'],
+      'avenirLight': ['Avenir Light', 'sans-serif'],
     },
     screens: {
       "xs": "380px",

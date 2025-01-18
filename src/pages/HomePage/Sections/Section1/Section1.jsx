@@ -1,5 +1,6 @@
 import Header1 from "../../../../components/Header1/Header1"
 import human_black from "/images/human_black.png"
+import human_white from "/images/human_white.png"
 import arrow_share from "/images/arrow_share.png"
 import ButtonMore from "../../../../components/ButtonMore/ButtonMore"
 import { useEffect, useState } from "react"
@@ -59,7 +60,6 @@ const Section1 = () => {
     }, 6000)
     return () => clearInterval(interval)
   },)
-
   const handleClick = (number) => {
     setSlideOut(true);
     setCurrent(number);
@@ -80,12 +80,12 @@ const Section1 = () => {
               className={`images ${slideOut ? 'slide-out' : ''} ${slideIn ? 'slide-in' : ''}`}
               style={{backgroundImage: images[current]}}
             />
-            
             {/* contact */}
             <div className="absolute top-[10px] 2xl:top-[20px] right-[10px] 2xl:right-[20px] flex gap-[10px]">
-              <div className="w-[150px] 2xl:w-[250px] h-[40px] 2xl:h-[50px] bg-[#ffffffd6] rounded-[40px] flex items-center justify-center cursor-pointer">Связаться</div>
-              <div className="w-[40px] 2xl:w-[50px] aspect-square rounded-full bg-[#ffffffd6] p-[8px]">
-                <img src={human_black} alt="" />
+              <div className="w-[150px] 2xl:w-[250px] h-[40px] 2xl:h-[50px] bg-[#ffffffd6] rounded-[40px] flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-[#00000080] hover:text-[#ffffffE6]">Связаться</div>
+              <div className="w-[40px] 2xl:w-[50px] aspect-square rounded-full bg-[#ffffffd6] p-[8px] cursor-pointer transition-all duration-200 hover:bg-[#00000080] group">
+                <img src={human_black} alt="" className="block group-hover:hidden" />
+                <img src={human_white} alt="" className="hidden group-hover:block" />
               </div>
             </div>
   
@@ -97,25 +97,25 @@ const Section1 = () => {
                   {/* when change data, change bg, if active bg-[#00000087] else bg-[#ffffffdb] */}
                   <div 
                     onClick={() => handleClick(0)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 0 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 0 ? "bg-[#00000080] text-[#ffffffCC]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     коммерция
                   </div>
                   <div 
                     onClick={() => handleClick(1)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 1 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 1 ? "bg-[#00000080] text-[#ffffffCC]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     жилая
                   </div>
                   <div 
                     onClick={() => handleClick(2)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 2 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 2 ? "bg-[#00000080] text-[#ffffffCC]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     инвестиции
                   </div>
                   <div 
                     onClick={() => handleClick(3)}
-                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 3 ? "bg-[#00000087] text-[#fff]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
+                    className={`w-[90px] xl:w-[120px] 2xl:w-[200px] h-[30px] xl:h-[40px] 2xl:h-[50px] rounded-[40px] text-[10px] xl:text-[12px] 2xl:text-[16px] flex items-center justify-center cursor-pointer ${current === 3 ? "bg-[#00000080] text-[#ffffffCC]" : "bg-[#ffffffdb]"} bg-[#00000087]`}
                   >
                     перепланировка
                   </div>
@@ -178,9 +178,9 @@ const Section1 = () => {
       {/* Left content */}
       <div className="container mx-auto">
         <div className="w-full lg:w-[474px] 2xl:w-[543px] mt-[30px] lg:mt-[-375px] xl:mt-[-460px] 2xl:mt-[-519px] truncate">
-          <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[400] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px]">Ваш путь к</div>
+          <div className="font-avenirLight text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[100] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px]">Ваш путь к</div>
           <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[700] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] text-[#333] mt-0 sm:mt-[10px]">идеальной недвижимости</div>
-          <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[400] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] mt-0 sm:mt-[10px]">начинается здесь</div>
+          <div className="font-avenirLight text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[100] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] mt-0 sm:mt-[10px]">начинается здесь</div>
   
           {/* box info */}
           <div className="flex items-center justify-between sm:justify-normal sm:gap-[20px] 2xl:gap-[22px] mt-[30px] xl:mt-[40px] 2xl:mt-[45px]">
@@ -206,8 +206,8 @@ const Section1 = () => {
           {/* What we do */}
           <div className="mt-[20px] xl:mt-[60px] mb-[20px] sm:mb-[30px] xl:mb-[40px]">
             <div className="flex items-center gap-[10px]">
-              <span className="font-avenir text-[20px] 2xl:text-[24px]">Что мы делаем</span>
-              <div className="flex-1 h-[1px] border-b sm:border-b-0 border-[#000] sm:bg-[#000]"></div>
+              <span className="font-avenir text-[20px] 2xl:text-[24px] text-[#313131]">Что мы делаем</span>
+              <div className="flex-1 h-[1px] border-b border-[#31313162]"></div>
             </div>
   
             {/* When change data, change text */}

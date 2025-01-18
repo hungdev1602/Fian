@@ -46,7 +46,7 @@ const FormEmail = ({ check = false }) => {
               />
 
               <button 
-                className="w-full sm:w-[250px] h-[50px] sm:h-[60px] bg-[#333] rounded-[40px] text-[14px] sm:text-[24px] text-[#fff] mt-[30px] sm:mt-[40px]"
+                className="w-full sm:w-[250px] h-[50px] sm:h-[60px] bg-[#333] rounded-[40px] text-[14px] sm:text-[18px] 2xl:text-[24px] text-[#fff] mt-[30px] sm:mt-[40px]"
               >
                 Отправить
               </button>

@@ -42,22 +42,22 @@ const Section3 = () => {
         <Title title="Награды" />
 
         <div className="bg-[#FFFFFFCC] py-[21px] px-[20px] md:px-[70px] hidden sm:flex items-center justify-between gap-[3px] md:gap-[10px] 2xl:gap-0 rounded-[20px] mt-[40px]" id='images'>
-          <div className="w-[100px] lg:w-[205px] h-[120px] lg:h-[180px] xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award1)}>
+          <div className="w-[100px] lg:w-[140px] 2xl:w-[205px] h-[120px] lg:h-[160px] 2xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award1)}>
             <img src={award1} alt="" className="w-full h-full object-cover"/>
           </div>
-          <div className="w-[100px] lg:w-[205px] h-[120px] lg:h-[180px] xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award2)}>
+          <div className="w-[100px] lg:w-[140px] 2xl:w-[205px] h-[120px] lg:h-[160px] 2xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award2)}>
             <img src={award2} alt="" className="w-full h-full object-cover"/>
           </div>
-          <div className="w-[100px] lg:w-[205px] h-[120px] lg:h-[180px] xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award3)}>
+          <div className="w-[100px] lg:w-[118px] 2xl:w-[205px] h-[120px] lg:h-[160px] 2xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award3)}>
             <img src={award3} alt="" className="w-full h-full object-cover"/>
           </div>
-          <div className="w-[100px] lg:w-[205px] h-[120px] lg:h-[180px] xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award4)}>
+          <div className="w-[100px] lg:w-[118px] 2xl:w-[205px] h-[120px] lg:h-[160px] 2xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award4)}>
             <img src={award4} alt="" className="w-full h-full object-cover"/>
           </div>
-          <div className="w-[100px] lg:w-[205px] h-[120px] lg:h-[180px] xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award5)}>
+          <div className="w-[100px] lg:w-[118px] 2xl:w-[205px] h-[120px] lg:h-[160px] 2xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award5)}>
             <img src={award5} alt="" className="w-full h-full object-cover"/>
           </div>
-          <div className="w-[100px] lg:w-[205px] h-[120px] lg:h-[180px] xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award6)}>
+          <div className="w-[100px] lg:w-[160px] 2xl:w-[205px] h-[120px] lg:h-[118px] 2xl:h-[228px] truncate border border-[#AAA09A] rounded-[20px] cursor-pointer" onClick={() => handleClick(award6)}>
             <img src={award6} alt="" className="w-full h-full object-cover"/>
           </div>
         </div>
@@ -67,8 +67,8 @@ const Section3 = () => {
           <div className="fixed top-0 left-0 w-full h-full bg-[#00000080] flex items-center justify-center" onClick={handleClose}>
             <div className="relative" onClick={e => e.stopPropagation()}>
               <img src={selectedImage} alt="" className="max-w-full max-h-full" style={{ transform: `scale(${zoom})` }}/>
-              <button className="absolute bottom-[-10px] right-0 m-2 bg-white p-1 rounded" onClick={handleZoomIn}>+</button>
-              <button className="absolute bottom-8 right-0 m-2 bg-white p-1 rounded" onClick={handleZoomOut}>-</button>
+              {/* <button className="absolute bottom-[-10px] right-0 m-2 bg-white p-1 rounded" onClick={handleZoomIn}>+</button>
+              <button className="absolute bottom-8 right-0 m-2 bg-white p-1 rounded" onClick={handleZoomOut}>-</button> */}
             </div>
           </div>
         )}

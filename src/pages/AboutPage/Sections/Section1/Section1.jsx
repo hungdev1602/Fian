@@ -11,23 +11,23 @@ import { GoDotFill } from "react-icons/go";
 const Section1 = () => {
   const socialsData = [
     {
-      icon: <RiTelegram2Line className="text-[16px] 2xl:text-[24px]"/>,
+      icon: <RiTelegram2Line className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
       link: "/",
     },
     {
-      icon: <FaWhatsapp className="text-[16px] 2xl:text-[24px]"/>,
+      icon: <FaWhatsapp className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
       link: "/",
     },
     {
-      icon: <FaInstagram className="text-[16px] 2xl:text-[24px]"/>,
+      icon: <FaInstagram className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
       link: "/",
     },
     {
-      icon: <FaXTwitter className="text-[16px] 2xl:text-[24px]"/>,
+      icon: <FaXTwitter className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
       link: "/",
     },
     {
-      icon: <FiYoutube className="text-[16px] 2xl:text-[24px]"/>,
+      icon: <FiYoutube className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
       link: "/",
     }
   ]
@@ -69,7 +69,7 @@ const Section1 = () => {
             <div className="text-[18px] sm:text-[20px] 2xl:text-[24px] font-[400] text-[#333] mt-[20px] xl:mt-[40px] leading-[22px] sm:leading-[24.5px] 2xl:leading-[29px]">В арсенале:</div>
 
             {/* box info */}
-            <div className="flex items-center gap-[20px] sm:gap-[45px] mt-[20px] 2xl:mt-[45px]">
+            <div className="flex items-center gap-[20px] 2xl:gap-[45px] mt-[20px] 2xl:mt-[45px]">
               {/* Box 1 */}
               <div className="text-center">
                 <div className="text-[24px] sm:text-[28px] 2xl:text-[36px] font-[700] text-[#494949] leading-[29px] sm:leading-[33.88px] 2xl:leading-[43.56px]">17</div>
@@ -91,8 +91,8 @@ const Section1 = () => {
 
             {/* подробнее */}
             <div className="flex items-center gap-[10px] mt-[18px] sm:mt-[40px]">
-              <span className="font-avenir text-[20px] 2xl:text-[24px] leading-[24.5px] 2xl:leading-[29px] text-[#333]">Подробнее</span>
-              <div className="2xl:flex-1 w-full lg:w-[396px] 2xl:w-auto h-[1px] border-b border-[#000]"></div>
+              <span className="font-avenir text-[20px] 2xl:text-[24px] leading-[24.5px] 2xl:leading-[29px] text-[#313131]">Подробнее</span>
+              <div className="2xl:flex-1 w-full lg:w-[396px] 2xl:w-auto h-[1px] border-b border-[#B2B2B2]"></div>
             </div>
 
             <div className="flex flex-col gap-[20px] mt-[20px] mb-[20px] sm:mb-0">

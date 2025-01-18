@@ -11,6 +11,11 @@
   font-family: "Avenir Thin";
   src: url('/fonts/AvenirNextCyr-Thin.ttf');
 }
+
+@font-face {
+  font-family: "Avenir Light";
+  src: url('/fonts/avenirnextcyr-light.ttf');
+}
 html{
   overflow-x: hidden;
 }
