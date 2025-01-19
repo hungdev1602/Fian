@@ -57,7 +57,7 @@ const ServiceLeft = ({ data }) => {
                 <div className="w-auto text-[12px] font-[500] text-[#494949] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
                 {
-                  data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+                  data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
                 }
               </div>
             }
@@ -75,7 +75,7 @@ const ServiceLeft = ({ data }) => {
             <div className="w-[180px] text-[12px] font-[500] text-[#494949] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
             {
-              data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+              data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
             }
           </div>
         }

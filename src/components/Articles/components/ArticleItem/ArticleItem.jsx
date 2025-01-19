@@ -12,7 +12,7 @@ const ArticleItem = ({ question, answer, link, check = false }) => {
           className="flex justify-between items-center border-b border-[#aaa] cursor-pointer pb-[5px]"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className="text-[12px] lg:text-[14px] xl:text-[18px] 2xl:text-[24px] font-[400] font-avenir uppercase">{question}</div>
+          <div className="text-[12px] lg:text-[14px] xl:text-[18px] 2xl:text-[24px] font-[400] font-avenir uppercase mt-[12px] sm:mt-0">{question}</div>
           <div className="w-[30px] lg:w-[35px] aspect-square flex items-center justify-center rounded-full bg-[#fff]">
             {isOpen ? <GoArrowDown className="text-[18px]" /> : <GoArrowUpRight className="text-[18px]" />}
           </div>

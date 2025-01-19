@@ -55,12 +55,12 @@ const ServicesTopItem = (props) => {
       
       {
         dataServiceItemTop.cards.length > 0 &&
-        <div className="flex gap-[5px] sm:hidden bg-[#797979] py-[10px] pl-[10px] pr-[10px] h-[50px] text-white">
+        <div className="flex gap-[10px] sm:hidden bg-[#797979] py-[10px] pl-[10px] pr-[10px] h-[50px] text-white">
           {
             dataServiceItemTop.cards.map((item, index) => (
               <div 
                 key={index}
-                className="px-[20px] h-[30px] flex items-center justify-center text-[13px] font-avenirThin rounded-[60px] bg-transparent border border-white"
+                className="px-[20px] h-[30px] flex items-center justify-center text-[13px] font-avenirThin rounded-[60px] bg-transparent border border-[#BDBDBD]"
               >
                 {item}
               </div>
@@ -75,14 +75,14 @@ const ServicesTopItem = (props) => {
           <div className="w-[110%] sm:w-auto font-avenir text-[22px] sm:text-[24px] 2xl:text-[32px] font-[400] uppercase leading-[20.7px] sm:leading-[25.2px] 2xl:leading-[28.8px]">{dataServiceItemTop.title}</div>
   
           {/* Desc */}
-          <div className="mt-[30px] lg:mt-[60px] 2xl:mt-[90px] flex items-center justify-between sm:justify-normal gap-0 sm:gap-[20px] 2xl:gap-[25px]">
+          <div className="mt-[30px] lg:mt-[60px] 2xl:mt-[90px] flex items-center justify-normal gap-[20px] 2xl:gap-[25px]">
             <div className="text-center sm:text-left 2xl:text-center">
-              <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px]">{dataServiceItemTop.desc[0].title}</div>
+              <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px] tracking-[-1px]">{dataServiceItemTop.desc[0].title}</div>
               <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#000000CC] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[5px] 2xl:mt-[10px]">{dataServiceItemTop.desc[0].subtitle}</div>
             </div>
             <div className="h-[40px] border border-[#C9C9C9]"></div>
             <div className="text-center sm:text-left 2xl:text-center">
-              <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px]">{dataServiceItemTop.desc[1].title}</div>
+              <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px] tracking-[-1px]">{dataServiceItemTop.desc[1].title}</div>
               <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#000000CC] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[5px] 2xl:mt-[10px]">{dataServiceItemTop.desc[1].subtitle}</div>
             </div>
           </div>
@@ -97,7 +97,7 @@ const ServicesTopItem = (props) => {
               <input type="text" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor}`} placeholder='Номер телефона'/>
               <input type="email" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor} mt-0 xl:mt-[-10px] 2xl:mt-0`} placeholder='Email'/>
   
-              <button className={`w-full sm:w-[150px] 2xl:w-[200px] h-[40px] 2xl:h-[50px] rounded-[40px] ${dataServiceItemTop.buttonColor} text-base 2xl:text-[20px] font-[400] ${dataServiceItemTop.buttonTextColor} mt-0 xl:mt-[-3px] 2xl:mt-0`}>Получить</button>
+              <button className={`w-full sm:w-[150px] 2xl:w-[200px] h-[50px] rounded-[40px] ${dataServiceItemTop.buttonColor} text-base 2xl:text-[20px] font-[400] ${dataServiceItemTop.buttonTextColor} mt-0 xl:mt-[-3px] 2xl:mt-0`}>Получить</button>
             </form>
           </div>
   

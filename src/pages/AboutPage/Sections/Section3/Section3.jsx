@@ -62,7 +62,9 @@ const Section3 = () => {
           </div>
         </div>
 
-        <SliderAward />
+        <div className="block sm:hidden bg-white p-5 rounded-[20px] mt-[20px]">
+          <SliderAward />
+        </div>
         {isOpen && (
           <div className="fixed top-0 left-0 w-full h-full bg-[#00000080] flex items-center justify-center" onClick={handleClose}>
             <div className="relative" onClick={e => e.stopPropagation()}>

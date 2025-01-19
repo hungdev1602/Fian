@@ -9,7 +9,7 @@ const FormEmail = ({ check = false }) => {
         <div className="flex justify-between">
           {/* Left */}
           <div className="w-full lg:w-[460px] py-[20px] sm:py-[40px] pl-[20px] sm:pl-[40px] pr-[20px] sm:pr-[40px] lg:pr-0">
-            <div className="text-[16px] sm:text-[20px] font-[400] font-avenir uppercase whitespace-pre-line  sm:leading-[18px]">{text}</div>
+            <div className="text-[16px] sm:text-[20px] font-[400] font-avenirLight uppercase whitespace-pre-line leading-[18px]">{text}</div>
             <div className="text-[24px] sm:text-[32px] 2xl:text-[42px] font-[700] text-[#333] font-avenir uppercase mt-[20px] leading-[21px] sm:leading-[28.8px] 2xl:leading-[37.8px]">Контакты</div>
 
             {/* google */}
@@ -28,19 +28,19 @@ const FormEmail = ({ check = false }) => {
             <form className="w-full mt-[30px] sm:mt-[60px] 2xl:mt-[96px]">
               <input 
                 type="text" 
-                className="w-full border-b border-[#333] outline-none text-[18px] bg-transparent"
+                className="w-full border-b border-[#808080] outline-none text-[18px] bg-transparent"
                 placeholder="Имя" 
                 required
               />
               <input 
                 type="text" 
-                className="w-full border-b border-[#333] outline-none text-[18px] mt-[20px] bg-transparent"
+                className="w-full border-b border-[#808080] outline-none text-[18px] mt-[20px] bg-transparent"
                 placeholder="Номер телефона" 
                 required
               />
               <input 
                 type="email" 
-                className="w-full border-b border-[#333] outline-none text-[18px] mt-[20px] bg-transparent"
+                className="w-full border-b border-[#808080] outline-none text-[18px] mt-[20px] bg-transparent"
                 placeholder="Email" 
                 required
               />

@@ -12,7 +12,7 @@ const HomePage = () => {
       <div className="mt-[30px] sm:mt-[100px] 2xl:mt-[120px]">
         <PartnerCarousel />
       </div>
-      <div className="mt-[30px]">
+      <div className="mt-[10px] sm:mt-[30px]">
         <PartnerCarousel backward={true} />
       </div>
       <div className="container mx-auto">

@@ -25,16 +25,16 @@ const ButtonMore = ({ text, link, customWidth = false, check, setOpenBurgerMenu 
         onClick={check ? () => setOpenBurgerMenu(false) : null}
       >
         {isOn && <div className="hidden sm:block text-[18px] 2xl:text-[24px] font-[500] pl-[15px] 2xl:pl-[12px]">{text}</div>}
-        <div className="block sm:hidden text-[18px] 2xl:text-[24px] font-[500] pl-[15px] 2xl:pl-[12px]">{text}</div>
+        <div className="block sm:hidden text-[14px] sm:text-[18px] 2xl:text-[24px] font-[500] pl-[15px] 2xl:pl-[12px]">{text}</div>
         {/* Thêm motion. trước thẻ (phải thêm layout transition) */}
         <motion.div 
-          className="w-[45px] sm:w-[52px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer"
+          className={`${customWidth ? "w-[42px]" : "w-[52px]"} sm:w-[52px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer`}
           layout transition={spring}
         >
           <img 
             src={arrow_share} 
             alt="" 
-            className="w-[15px] aspect-square object-cover"
+            className="w-[11px] sm:w-[15px] aspect-square object-cover"
 
           />
         </motion.div>

@@ -212,7 +212,7 @@ const Section1 = () => {
   
             {/* When change data, change text */}
             <div 
-              className={`reg-text ${slideOut ? 'slide-out' : ''} ${slideIn ? 'slide-in' : ''} relative text-[14px] xl:text-[18px] 2xl:text-[20px] font-[400] whitespace-pre-line leading-[16px] sm:leading-[18px] 2xl:leading-[20px] mt-[10px] sm:mt-[20px] 2xl:mt-[40px] transition-all duration-[5000ms] ease-in-out`}
+              className={`reg-text ${slideOut ? 'slide-out' : ''} ${slideIn ? 'slide-in' : ''} relative text-[14px] xl:text-[18px] 2xl:text-[20px] text-[#494949] font-[400] whitespace-pre-line leading-[16px] sm:leading-[18px] 2xl:leading-[20px] mt-[10px] sm:mt-[20px] 2xl:mt-[40px] transition-all duration-[5000ms] ease-in-out`}
             >
               {data[current].title}
             </div>

@@ -97,10 +97,10 @@ const Section1 = () => {
 
             <div className="flex flex-col gap-[20px] mt-[20px] mb-[20px] sm:mb-0">
               <div className="flex sm:block text-[14px] sm:text-[18px] 2xl:text-[20px] font-[400] text-[#000000E5] leading-[16px] sm:leading-[18px] 2xl:leading-[24px]">
-                {window.innerWidth < 576 && <GoDotFill className="text-[10px]"/>}
+                {window.innerWidth < 576 && <GoDotFill className="text-[10px] mt-[2px]"/>}
                 Эксперт в области недвижимости с 35 летним опытом
               </div>
-              <div className="flex sm:block text-[14px] sm:text-[18px] 2xl:text-[20px] font-[400] text-[#000000E5] leading-[16px] sm:leading-[18px] 2xl:leading-[24px]">
+              <div className="flex items-center sm:block text-[14px] sm:text-[18px] 2xl:text-[20px] font-[400] text-[#000000E5] leading-[16px] sm:leading-[18px] 2xl:leading-[24px]">
                 {window.innerWidth < 576 && <GoDotFill className="text-[10px]"/>}
                 {
                   window.innerWidth < 576 
@@ -108,7 +108,7 @@ const Section1 = () => {
                   : "Партнер национального центра реконструкций и перепланировок" 
                 }
               </div>
-              <div className="flex sm:block text-[14px] sm:text-[18px] 2xl:text-[20px] font-[400] text-[#000000E5] leading-[16px] sm:leading-[18px] 2xl:leading-[24px]">
+              <div className="flex items-center sm:block text-[14px] sm:text-[18px] 2xl:text-[20px] font-[400] text-[#000000E5] leading-[16px] sm:leading-[18px] 2xl:leading-[24px]">
                 {window.innerWidth < 576 && <GoDotFill className="text-[10px]"/>}
                 Член гильдии риелторов Москвы
               </div>

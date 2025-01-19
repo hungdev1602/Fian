@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Inter', 'sans-serif'],
+      'sans': ['Inter', 'serif'],
       'avenir': ['Avenir Next Cyr', 'sans-serif'],
       'avenirThin': ['Avenir Thin', 'sans-serif'],
       'avenirLight': ['Avenir Light', 'sans-serif'],

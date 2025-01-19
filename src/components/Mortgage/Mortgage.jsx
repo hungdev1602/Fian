@@ -100,7 +100,7 @@ const Mortgage = () => {
   
               <div className="text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Быстрое одобрение ипотеки</div>
   
-              <div className="w-[90%] text-[10px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%]">{text1}</div>
+              <div className="w-[95%] text-[12px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%] tracking-tighter">{text1}</div>
             </div>
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
@@ -112,7 +112,7 @@ const Mortgage = () => {
   
               <div className="text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Подбор выгодных условий</div>
   
-              <div className="w-[90%] text-[10px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%]">{text2}</div>
+              <div className="w-[98%] text-[12px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%] tracking-tighter">{text2}</div>
             </div>
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
@@ -124,7 +124,7 @@ const Mortgage = () => {
   
               <div className="text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Индивидуальный подход</div>
   
-              <div className="w-[90%] text-[10px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%]">{text3}</div>
+              <div className="w-[99%] text-[12px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%] tracking-tighter">{text3}</div>
             </div>
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
@@ -136,7 +136,7 @@ const Mortgage = () => {
   
               <div className="text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Согласуем после отказов</div>
   
-              <div className="w-[90%] text-[10px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%]">{text4}</div>
+              <div className="w-[96%] text-[12px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%] tracking-tighter">{text4}</div>
             </div>
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
@@ -148,7 +148,7 @@ const Mortgage = () => {
   
               <div className="text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Крупная сумма</div>
   
-              <div className="w-[90%] text-[10px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%]">{text5}</div>
+              <div className="w-[97%] text-[12px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%] tracking-tighter">{text5}</div>
             </div>
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>

@@ -17,8 +17,8 @@ import partner9 from '/images/partner_9.png';
 
 // Define the style for the images in the carousel
 const imageStyle = {
-  width: '200px',
-  height: '40px',
+  width: window.innerWidth < 576 ? '150px' : '200px',
+  height: window.innerWidth < 576 ? "30px" :'40px',
   borderRadius: '20px',
 };
 
@@ -37,8 +37,8 @@ function PartnerCarousel({ backward }) {
             },
             arrows: false, // Hide navigation arrows
             pagination: false, // Hide pagination dots
-            fixedWidth: '200px', // Fixed width for each slide
-            gap: '20px', // Gap between slides
+            fixedWidth:  window.innerWidth < 576 ? '150px' : '200px', // Fixed width for each slide
+            gap: window.innerWidth < 576 ? '10px' : '20px', // Gap between slides
             direction: backward ? 'rtl' : 'ltr',
           }}
           extensions={{ AutoScroll }} // Use the AutoScroll extension

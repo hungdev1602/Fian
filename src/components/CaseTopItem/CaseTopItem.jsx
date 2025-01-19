@@ -79,7 +79,7 @@ const CaseTopItem = (props) => {
               <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px]">{dataServiceItemTop.desc[0].title}</div>
               <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#313131] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[10px]">{dataServiceItemTop.desc[0].subtitle}</div>
             </div>
-            <div className="h-[40px] border border-[#C9C9C9]"></div>
+            <div className="h-[30px] sm:h-[40px] border border-[#C9C9C9]"></div>
             <div className="text-center sm:text-left 2xl:text-center">
               <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px]">{dataServiceItemTop.desc[1].title}</div>
               <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#313131] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[10px]">{dataServiceItemTop.desc[1].subtitle}</div>

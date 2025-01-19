@@ -23,7 +23,7 @@ const MobileAccordion = ({ number, title, desc }) => {
           className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[10000px]' : 'max-h-0 overflow-hidden'}`}
           style={{ maxHeight: isOpen ? '10000px' : '0', opacity: isOpen ? '1' : '0', marginTop: isOpen ? '10px' : '0' }}
         >
-          <div className="text-[10px] font-[500] text-justify">{desc}</div>
+          <div className="text-[10px] font-[500] leading-[12.1px] text-[#6D6D6D]">{desc}</div>
         </div>
       </div>
     </>
