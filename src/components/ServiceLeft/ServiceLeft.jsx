@@ -14,16 +14,16 @@ const ServiceLeft = ({ data }) => {
               data.info.map((item, index) => (
                 <div 
                   key={index}
-                  className="flex items-center justify-between pb-[18px] 2xl:pb-[25px] border-b border-[#aaa]"
+                  className={`flex items-center justify-between ${item.padding} 2xl:pb-[25px] border-b border-[#aaa]`}
                 >
                   {/* Left */}
                   <div className="flex items-center gap-[15px] 2xl:gap-[20px]">
-                    <div className="w-[30px] lg:w-[50px] aspect-square flex items-center justify-center rounded-full border border-[#aaa]">{index + 1}</div>
+                    <div className="w-[30px] lg:w-[50px] aspect-square flex items-center justify-center rounded-full border border-[#aaa] text-xl font-bold">{index + 1}</div>
                     <div className="text-[12px] lg:text-[20px] 2xl:text-[24px] font-[400] font-avenir uppercase leading-[18px] 2xl:leading-[21px]">{item.title}</div>
                   </div>
 
                   {/* Right */}
-                  <div className="w-[230px] lg:w-[330px] 2xl:w-[430px] text-[12px] lg:text-[16px] 2xl:text-[20px] text-[#333] leading-[19.36px] 2xl:leading-[24px] whitespace-normal 2xl:whitespace-pre-line">{item.desc}</div>
+                  <div className="w-[230px] lg:w-[330px] 2xl:w-[430px] text-[12px] lg:text-[15px] 2xl:text-[20px] text-[#6D6D6D] leading-[19.36px] 2xl:leading-[24px] whitespace-normal 2xl:whitespace-pre-line">{item.desc}</div>
                 </div>
               ))
             }
@@ -54,7 +54,7 @@ const ServiceLeft = ({ data }) => {
             {
               data.check &&
               <div className="block md:hidden items-center justify-between mt-[20px]">
-                <div className="w-auto text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+                <div className="w-auto text-[12px] font-[500] text-[#494949] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
                 {
                   data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
@@ -72,7 +72,7 @@ const ServiceLeft = ({ data }) => {
         {
           !data.check &&
           <div className="flex md:hidden items-center justify-between mt-[20px]">
-            <div className="w-[180px] text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+            <div className="w-[180px] text-[12px] font-[500] text-[#494949] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
             {
               data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>

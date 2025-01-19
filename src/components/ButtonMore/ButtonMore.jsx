@@ -24,7 +24,8 @@ const ButtonMore = ({ text, link, customWidth = false, check, setOpenBurgerMenu 
         customWidth={customWidth ? "yeah" : "nope"}
         onClick={check ? () => setOpenBurgerMenu(false) : null}
       >
-        {isOn && <div className="text-[18px] 2xl:text-[24px] font-[500] pl-[15px] 2xl:pl-[12px]">{text}</div>}
+        {isOn && <div className="hidden sm:block text-[18px] 2xl:text-[24px] font-[500] pl-[15px] 2xl:pl-[12px]">{text}</div>}
+        <div className="block sm:hidden text-[18px] 2xl:text-[24px] font-[500] pl-[15px] 2xl:pl-[12px]">{text}</div>
         {/* Thêm motion. trước thẻ (phải thêm layout transition) */}
         <motion.div 
           className="w-[45px] sm:w-[52px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer"

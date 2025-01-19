@@ -70,19 +70,19 @@ const CaseTopItem = (props) => {
 
       {/* Left content */}
       <div className="container mx-auto">
-        <div className="w-full md:w-[630px] mt-[30px] sm:mt-0 md:mt-[-550px] lg:mt-[-580px] 2xl:mt-[-685px]">
+        <div className="w-full md:w-[630px] mt-[30px] sm:mt-0 md:mt-[-550px] lg:mt-[-555px] 2xl:mt-[-685px]">
           <div className="font-avenir text-[23px] sm:text-[28px] 2xl:text-[32px] font-[400] uppercase leading-[20.7px] sm:leading-[25.2px] 2xl:leading-[28.8px]">{dataServiceItemTop.title}</div>
   
           {/* Desc */}
-          <div className="mt-[30px] lg:mt-[60px] 2xl:mt-[90px] flex items-center gap-[20px] 2xl:gap-[25px]">
+          <div className="mt-[30px] lg:mt-[55px] 2xl:mt-[90px] flex items-center gap-[20px] 2xl:gap-[25px]">
             <div className="text-center sm:text-left 2xl:text-center">
               <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px]">{dataServiceItemTop.desc[0].title}</div>
-              <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#000000CC] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[10px]">{dataServiceItemTop.desc[0].subtitle}</div>
+              <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#313131] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[10px]">{dataServiceItemTop.desc[0].subtitle}</div>
             </div>
             <div className="h-[40px] border border-[#C9C9C9]"></div>
             <div className="text-center sm:text-left 2xl:text-center">
               <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[700] text-[#484848] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px]">{dataServiceItemTop.desc[1].title}</div>
-              <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#000000CC] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[10px]">{dataServiceItemTop.desc[1].subtitle}</div>
+              <div className="text-[12px] sm:text-[16px] 2xl:text-[18px] font-[400] text-[#313131] leading-[14.7px] sm:leading-[19.6px] 2xl:leading-[21.78px] mt-[10px]">{dataServiceItemTop.desc[1].subtitle}</div>
             </div>
           </div>
   
@@ -90,7 +90,7 @@ const CaseTopItem = (props) => {
             <div className="text-[18px] sm:text-[20px] 2xl:text-[24px] font-[400] font-avenir leading-[22px] sm:leading-[24.5px] 2xl:leading-[29.4px]">[Запрос]</div>
             <div className="text-[16px] sm:text-[18px] 2xl:text-[20px] font-[400] text-[#000000E5] leading-[18px] 2xl:leading-[24px] whitespace-pre-line mt-[10px] sm:mt-[20px]">{dataServiceItemTop.request}</div>
           </div>
-          <div className="mt-[20px] sm:mt-[30px] 2xl:mt-[40px] mb-[20px] sm:mb-[40px]">
+          <div className="mt-[20px] sm:mt-[30px] 2xl:mt-[40px] mb-[20px] sm:mb-[30px] 2xl:mb-[40px]">
             <div className="text-[18px] sm:text-[20px] 2xl:text-[24px] font-[400] font-avenir leading-[22px] sm:leading-[24.5px] 2xl:leading-[29.4px]">[Решение]</div>
             <div className="text-[16px] sm:text-[18px] 2xl:text-[20px] font-[400] text-[#000000E5] leading-[18px] 2xl:leading-[24px] whitespace-pre-line mt-[10px] sm:mt-[20px]">{dataServiceItemTop.solution}</div>
           </div>

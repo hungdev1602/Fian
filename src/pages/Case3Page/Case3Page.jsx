@@ -42,25 +42,29 @@ const Case3Page = () => {
     info: [
       {
         title: "500 000 рублей",
-        desc: `Стоимость проектной документации.`
+        desc: `Стоимость проектной документации.`,
+        padding: "lg:pb-[30px]"
       },
       {
         title: "100 000 рублей",
-        desc: `Стоимость раскадастривания.`
+        desc: `Стоимость раскадастривания.`,
+        padding: "lg:pb-[30px]"
       },
       {
         title: "1 300 000 рублей",
-        desc: `Стоимость ремонта помещения.`
+        desc: `Стоимость ремонта помещения.`,
+        padding: "lg:pb-[30px]"
       },
       {
         title: "19 000 000 рублей",
         desc: `Наличные деньги у клиента на руках, на покупку 
-        помещения.`
+        помещения.`,
+        padding: "lg:pb-[30px]"
       }
     ],
     desc: ``,
     buttonText: "Модернизировать",
-    heightImg: "h-[189px] sm:h-[201px] lg:h-[400px] 2xl:h-[446px]",
+    heightImg: "h-[189px] sm:h-[201px] lg:h-[443px] 2xl:h-[446px]",
     hideButton: true
   }
   const processData = {
@@ -75,16 +79,18 @@ const Case3Page = () => {
         {
           title: "Инвестиция, которая дала 2x",
           desc: `Теперь рыночная цена этого помещения 
-          35 000 000 рублей.`
+          35 000 000 рублей.`,
+          padding: "pb-[30px]"
         },
         {
           title: "Пассивный доход",
           desc: `Пассивный доход с 2х помещений 330 000 
-          рублей.`
+          рублей.`,
+          padding: "pb-[30px]"
         }
       ],
       buttonText: "Консультация",
-      heightImg: "h-[160px] sm:h-[175px] lg:h-[267px] 2xl:h-[307px]",
+      heightImg: "h-[160px] sm:h-[175px] lg:h-[292px] 2xl:h-[307px]",
       check: true
   }
   const sliderData = [slider_1, slider_2, slider_3, slider_4, slider_5, slider_6, slider_7]

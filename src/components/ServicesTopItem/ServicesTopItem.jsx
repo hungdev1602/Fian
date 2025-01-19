@@ -2,7 +2,7 @@
 import Header1 from "../Header1/Header1"
 import human_black from "/images/human_black.png"
 import logo_rotate from "/images/logo_rotate.png"
-
+import human_white from "/images/human_white.png"
 const ServicesTopItem = (props) => {
   const {
     dataServiceItemTop
@@ -15,9 +15,10 @@ const ServicesTopItem = (props) => {
           <div className={`hidden sm:block w-full lg:w-[470px] xl:w-[576px] 2xl:w-[870px] h-[400px] md:h-[515px] xl:h-[527px] 2xl:h-[640px] ${dataServiceItemTop.backgroundImg} bg-cover bg-center rounded-[20px] relative truncate`}>
             {/* contact */}
             <div className="absolute top-[20px] right-[20px] flex gap-[10px]">
-              <div className="w-[150px] 2xl:w-[250px] h-[40px] 2xl:h-[50px] bg-[#ffffffd6] rounded-[40px] flex items-center justify-center cursor-pointer">Связаться</div>
-              <div className="w-[40px] 2xl:w-[50px] aspect-square rounded-full bg-[#ffffffd6] p-[8px]">
-                <img src={human_black} alt="" />
+              <div className="w-[150px] 2xl:w-[250px] h-[40px] 2xl:h-[50px] bg-[#ffffffd6] rounded-[40px] flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-[#00000080] hover:text-[#ffffffE6]">Связаться</div>
+              <div className="w-[40px] 2xl:w-[50px] aspect-square rounded-full bg-[#ffffffd6] p-[8px] transition-all duration-200 hover:bg-[#00000080] group">
+                <img src={human_black} alt="" className="block group-hover:hidden"/>
+                <img src={human_white} alt="" className="hidden group-hover:block" />
               </div>
             </div>
   
@@ -29,7 +30,7 @@ const ServicesTopItem = (props) => {
                     dataServiceItemTop.cards.map((item, index) => (
                       <div 
                         key={index}
-                        className="w-[135px] 2xl:w-[200px] h-[40px] 2xl:h-[50px] rounded-[40px] flex items-center justify-center text-sm 2xl:text-base bg-[#ffffffe6]"
+                        className="w-[135px] 2xl:w-[200px] h-[40px] 2xl:h-[50px] rounded-[40px] flex items-center justify-center text-sm 2xl:text-base bg-[#ffffffe6] pt-[5px] 2xl:pt-0"
                       >
                         {item}
                       </div>
@@ -70,7 +71,7 @@ const ServicesTopItem = (props) => {
       
       {/* Left content */}
       <div className="container mx-auto">
-        <div className="w-full lg:w-[500px] 2xl:w-[630px] mt-[30px] sm:mt-0 lg:mt-[-456px] xl:mt-[-580px] 2xl:mt-[-685px]">
+        <div className="w-full lg:w-[500px] 2xl:w-[630px] mt-[30px] sm:mt-0 lg:mt-[-456px] xl:mt-[-557px] 2xl:mt-[-685px]">
           <div className="w-[110%] sm:w-auto font-avenir text-[22px] sm:text-[24px] 2xl:text-[32px] font-[400] uppercase leading-[20.7px] sm:leading-[25.2px] 2xl:leading-[28.8px]">{dataServiceItemTop.title}</div>
   
           {/* Desc */}
@@ -90,13 +91,13 @@ const ServicesTopItem = (props) => {
           <div className="mt-[30px] xl:mt-[60px] 2xl:mt-[90px]">
             <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[500] text-[#494949] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px] text-center sm:text-left">{dataServiceItemTop.formTitle}</div>
   
-            <form className={`w-full xl:w-[474px] 2xl:w-[500px] p-[20px] rounded-[20px] flex flex-col gap-[20px] mt-[10px] sm:mt-[25px] 2xl:mt-[20px] ${dataServiceItemTop.formTextColor}  ${dataServiceItemTop.formColor}`}>
+            <form className={`w-full xl:w-[474px] 2xl:w-[500px] p-[20px] rounded-[20px] flex flex-col gap-[20px] mt-[10px] sm:mt-[18px] ${dataServiceItemTop.formTextColor}  ${dataServiceItemTop.formColor}`}>
               <div className="text-[12px] sm:text-base 2xl:text-[18px] font-[400] text-center sm:text-left">[5 прибыльных объектов, которые дадут иксы в 2025]</div>
   
               <input type="text" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor}`} placeholder='Номер телефона'/>
-              <input type="email" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor}`} placeholder='Email'/>
+              <input type="email" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor} mt-0 xl:mt-[-10px] 2xl:mt-0`} placeholder='Email'/>
   
-              <button className={`w-full sm:w-[150px] 2xl:w-[200px] h-[40px] 2xl:h-[50px] rounded-[40px] ${dataServiceItemTop.buttonColor} text-base 2xl:text-[20px] font-[400] ${dataServiceItemTop.buttonTextColor}`}>Получить</button>
+              <button className={`w-full sm:w-[150px] 2xl:w-[200px] h-[40px] 2xl:h-[50px] rounded-[40px] ${dataServiceItemTop.buttonColor} text-base 2xl:text-[20px] font-[400] ${dataServiceItemTop.buttonTextColor} mt-0 xl:mt-[-3px] 2xl:mt-0`}>Получить</button>
             </form>
           </div>
   

@@ -22,7 +22,7 @@ const Mortgage = () => {
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-[10px] lg:gap-x-[20px] gap-y-[10px] lg:gap-y-[40px] mt-[20px] sm:mt-[40px]">
           {/* 1 item */}
-          <div className="hidden lg:flex items-center justify-between pt-[10px] lg:pt-[20px] 2xl:pt-[40px] border-t border-[#aaa] text-[#333]">
+          <div className="hidden lg:flex items-center justify-between pt-[10px] lg:pt-[20px] 2xl:pt-[40px] border-t border-[#aaa] text-[#333] cursor-pointer">
             <div className="h-[125px] border-r border-[#aaa]"></div>
             <div className="">
               <img src={mortgage_1} alt="" className="w-[24px] 2xl:w-[32px] aspect-square object-cover ml-[2%] lg:ml-[5%] 2xl:ml-0" />

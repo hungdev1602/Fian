@@ -52,7 +52,7 @@ const FormEmail = ({ check = false }) => {
               </button>
             </form>
 
-            <div className="w-full sm:w-[440px] text-[6px] sm:text-[10px] font-[400] font-avenirThin leading-[9px] mt-[10px] sm:mt-[100px] 2xl:mt-[157px] uppercase">Отправляя заявку, вы даете согласие на обработку своих персональных данных в соответствии с политикой конфиденциальности.</div>
+            <div className="w-full sm:w-[440px] text-[6px] sm:text-[10px] font-[400] font-avenirThin leading-[9px] mt-[10px] sm:mt-[125px] 2xl:mt-[157px] text-[#B2B2B2] uppercase">Отправляя заявку, вы даете согласие на обработку своих персональных данных в соответствии с политикой конфиденциальности.</div>
           </div>
 
           {/* Right */}
