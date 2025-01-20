@@ -9,7 +9,7 @@ const ServiceLeft = ({ data }) => {
 
         <div className="flex justify-between items-start mt-[40px]">
           {/* Left */}
-          <div className="flex-1 hidden md:flex flex-col gap-[10px] lg:gap-[40px] mr-[20px] lg:mr-[35px] 2xl:mr-[50px]">
+          <div className="flex-1 hidden md:flex flex-col gap-[10px] lg:gap-[30px] mr-[20px] lg:mr-[35px] 2xl:mr-[50px]">
             {
               data.info.map((item, index) => (
                 <div 

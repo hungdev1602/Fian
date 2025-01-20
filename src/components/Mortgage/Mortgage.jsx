@@ -116,7 +116,7 @@ const Mortgage = () => {
           </div>
           {/* 2 item */}
           <div className="flex lg:hidden items-center justify-between py-[10px] border-y border-[#aaa] text-[#333]">
-            <div className="h-[123px] border-r border-[#aaa]"></div>
+            {/* <div className="h-[123px] border-r border-[#aaa]"></div> */}
             <div className="">
               <img src={mortgage_2} alt="" className="w-[24px] aspect-square object-cover ml-[4%]" />
   
@@ -127,7 +127,7 @@ const Mortgage = () => {
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
           {/* 3 item */}
-          <div className="flex lg:hidden items-center justify-between py-[10px] border-y border-[#aaa] text-[#333]">
+          <div className="flex lg:hidden items-center justify-between py-[10px] border-b border-[#aaa] text-[#333]">
             <div className="h-[123px] border-r border-[#aaa]"></div>
             <div className="">
               <img src={mortgage_3} alt="" className="w-[24px] aspect-square object-cover ml-[4%]" />
@@ -139,8 +139,8 @@ const Mortgage = () => {
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
           {/* 4 item */}
-          <div className="flex lg:hidden items-center justify-between py-[10px] border-y border-[#aaa] text-[#333]">
-            <div className="h-[123px] border-r border-[#aaa]"></div>
+          <div className="flex lg:hidden items-center justify-between py-[10px] border-b border-[#aaa] text-[#333]">
+            {/* <div className="h-[123px] border-r border-[#aaa]"></div> */}
             <div className="">
               <img src={mortgage_4} alt="" className="w-[24px] aspect-square object-cover ml-[4%]" />
   
@@ -151,7 +151,7 @@ const Mortgage = () => {
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
           {/* 5 item */}
-          <div className="flex lg:hidden items-center justify-between py-[10px] border-y border-[#aaa] text-[#333]">
+          <div className="flex lg:hidden items-center justify-between py-[10px] border-b border-[#aaa] text-[#333]">
             <div className="h-[123px] border-r border-[#aaa]"></div>
             <div className="">
               <img src={mortgage_5} alt="" className="w-[24px] aspect-square object-cover ml-[4%]" />
@@ -163,8 +163,8 @@ const Mortgage = () => {
             <div className="h-[125px] border-r border-[#aaa]"></div>
           </div>
           {/* 6 item */}
-          <div className="flex lg:hidden items-center justify-between py-[10px] border-y border-[#aaa] text-[#333] cursor-pointer">
-          <div className="h-[123px] border-r border-[#aaa]"></div>
+          <div className="flex lg:hidden items-center justify-between py-[10px] border-b border-[#aaa] text-[#333] cursor-pointer">
+          <div className="h-[123px] border-r border-transparent"></div>
             <div className="flex items-center justify-center">
               <div className="text-[14px] sm:text-[22px] 2xl:text-[32px] font-[400] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px]">Получить ипотеку</div>
             </div>

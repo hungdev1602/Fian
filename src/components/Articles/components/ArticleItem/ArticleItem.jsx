@@ -22,7 +22,7 @@ const ArticleItem = ({ question, answer, link, check = false }) => {
           style={{ maxHeight: isOpen ? '10000px' : '0', opacity: isOpen ? '1' : '0', marginTop: isOpen ? (window.innerWidth < 1920 ? '10px' : '30px') : '0' }}
         >
           <div className="px-[10px] sm:px-[20px] border-x border-[#aaa] mt-[20px]">
-            <div className="text-[12px] xl:text-base 2xl:text-[20px] font-[500] mb-[20px] 2xl:mb-[40px]">{answer}</div>
+            <div className="text-[12px] xl:text-base 2xl:text-[20px] text-[#494949] font-[400] mb-[20px] 2xl:mb-[40px]">{answer}</div>
   
             <ButtonMore text={'Читать'} link={link} customWidth={true} />
           </div>

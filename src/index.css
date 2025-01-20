@@ -24,3 +24,51 @@ body{
   background: #f3f3f3;
   overflow-x: hidden;
 }
+
+input::placeholder {
+  font-weight: 400;
+}
+
+.wave-btn{
+  position: relative;
+  z-index: 2;
+}
+
+.wave-btn::before, 
+.wave-btn::after{
+  position: absolute;
+		width: 100%;
+		height: 100%;
+		content: "";
+		display: block;
+		border-radius: inherit;
+		top: 0;
+		right: 0;
+		transform: scale(0);
+		transform-origin: center;
+		-webkit-backface-visibility: hidden;
+		z-index: -1;
+		border: 1px solid #333;
+}
+.wave-btn::before{
+  animation: wave-animate 2s infinite ease-out;
+}
+.wave-btn::after{
+  opacity:0;
+  animation: wave-animate 2s 1.5s infinite ease-out;
+}
+
+.wave-btn:focus{
+  outline:none !important;
+}
+
+@keyframes wave-animate {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

@@ -15,7 +15,7 @@ const MobileAccordion = ({ number, title, desc }) => {
             <div className="text-[12px] font-avenir font-[400] leading-[14.7px] uppercase">{title}</div>
           </div>
           <div className="">
-            {isOpen ? <FaAngleDown /> : <FaAngleRight />}
+            {isOpen ? <FaAngleDown className="text-[#333]"/> : <FaAngleRight className="text-[#333]"/>}
           </div>
         </div>
         {/* answer */}

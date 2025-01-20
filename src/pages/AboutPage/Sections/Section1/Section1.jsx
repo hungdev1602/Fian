@@ -42,7 +42,7 @@ const Section1 = () => {
             <MobileSection />
 
             <div className="text-[24px] sm:text-[28px] font-[400] font-avenir uppercase leading-[21px] sm:leading-[34px]">Наталья Фадеева</div>
-            <div className="text-[18px] sm:text-[20px] 2xl:text-[24px] font-[400] mt-[10px] leading-[22px] sm:leading-[24.5px] 2xl:leading-[29px]">
+            <div className="text-[18px] sm:text-[20px] 2xl:text-[24px] text-[#333333] font-[400] mt-[10px] leading-[22px] sm:leading-[24.5px] 2xl:leading-[29px]">
               {
                 window.innerWidth < 576 
                 ? 'Основатель FIAN' 

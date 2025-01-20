@@ -86,7 +86,7 @@ const CommercialPage = () => {
     desc: `Продажа / покупка вашей недвижимости 
     на максимально выгодных условиях`,
     buttonText: "Продать",
-    heightImg: "h-[339px] md:h-[572px] lg:h-[896px] 2xl:h-auto"
+    heightImg: "h-[339px] md:h-[572px] lg:h-[820px] 2xl:h-auto"
   }
   const dataServiceLeft = {
     title: "Арендный бизнес",
@@ -155,7 +155,7 @@ const CommercialPage = () => {
     desc: `Покупка готового арендного бизнеса, 
     который сразу приносит доход.`,
     buttonText: "Продать",
-    heightImg: "h-[389px] md:h-[851px] lg:h-[1080px] 2xl:h-[1251px]"
+    heightImg: "h-[389px] md:h-[851px] lg:h-[1001px] 2xl:h-[1251px]"
   }
   return (
     <>

@@ -25,7 +25,8 @@ const InvestmentPage = () => {
     backgroundImg: "bg-bgInvestment",
     cards: [],
     placeholderColor: "placeholder-[#DCCDBF]",
-    imgRotate: investment_rotate
+    imgRotate: investment_rotate,
+    borderColor: "border-[#E6DBD1]"
   }
   const dataServiceRight = {
     title: window.innerWidth < 576 ? "Инвестируй с нами" : "покупка / Продажа коммерческой недвижимости",

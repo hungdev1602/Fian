@@ -1,7 +1,7 @@
 import Header1 from "../../../../components/Header1/Header1"
 import human_black from "/images/human_black.png"
 import human_white from "/images/human_white.png"
-import arrow_share from "/images/arrow_share.png"
+import arrow_share from "/images/arrow_share.svg"
 import ButtonMore from "../../../../components/ButtonMore/ButtonMore"
 import { useEffect, useState } from "react"
 import SliderSwipwe from "./components/SliderSwipwe"
@@ -177,7 +177,7 @@ const Section1 = () => {
 
       {/* Left content */}
       <div className="container mx-auto">
-        <div className="w-full lg:w-[474px] 2xl:w-[543px] mt-[30px] lg:mt-[-375px] xl:mt-[-460px] 2xl:mt-[-519px] truncate">
+        <div className="w-full lg:w-[480px] 2xl:w-[543px] mt-[30px] lg:mt-[-375px] xl:mt-[-460px] 2xl:mt-[-519px] truncate">
           <div className="font-avenirLight text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[100] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px]">Ваш путь к</div>
           <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[700] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] text-[#333] mt-0 sm:mt-[10px]">идеальной недвижимости</div>
           <div className="font-avenirLight text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[100] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] mt-0 sm:mt-[10px]">начинается здесь</div>

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
-import arrow_share from "/images/arrow_share.png"
-import arrow_share_white from "/images/arrow_share_white.png"
+import arrow_share from "/images/arrow_share.svg"
+import arrow_share_white from "/images/arrow_share_white.svg"
 const Item = ({ background, width, title, cards, link, setIsOpen, check = false }) => {
   return (
     <>
@@ -15,7 +15,7 @@ const Item = ({ background, width, title, cards, link, setIsOpen, check = false 
                 cards.map((item, index) => (
                   <div 
                     key={index}
-                    className="inline-flex items-center justify-center text-[14px] sm:text-[16px] font-[400] font-avenirThin text-[#fff] border border-[#fff] py-[7px] sm:py-[10px] 2xl:py-[10px] px-[20px] sm:px-[12px] xl:px-[20px] rounded-[60px] leading-[17.15px] sm:leading-[19.4px]"
+                    className="inline-flex items-center justify-center text-[14px] sm:text-[16px] font-[400] font-avenirThin text-[#fff] border border-[#A7A398] py-[7px] sm:py-[10px] 2xl:py-[10px] px-[20px] sm:px-[12px] xl:px-[20px] rounded-[60px] leading-[17.15px] sm:leading-[19.4px]"
                   >
                     {item}
                   </div>
@@ -32,12 +32,12 @@ const Item = ({ background, width, title, cards, link, setIsOpen, check = false 
               <img 
                 src={arrow_share} 
                 alt="" 
-                className="w-[12px] 2xl:w-[15px] aspect-square object-cover block group-hover:hidden"
+                className="w-[20px] sm:w-[25px] aspect-square object-cover block group-hover:hidden"
               />
               <img 
                 src={arrow_share_white} 
                 alt="" 
-                className="w-[12px] 2xl:w-[15px] aspect-square object-cover hidden group-hover:block"
+                className="w-[20px] sm:w-[25px] aspect-square object-cover hidden group-hover:block"
               />
             </Link>
           </div>

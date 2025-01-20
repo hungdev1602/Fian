@@ -14,7 +14,7 @@ const ServiceRight = ({ data }) => {
           </div>
 
           {/* Right */}
-          <div className="flex-1 hidden md:flex flex-col gap-[10px] lg:gap-[40px] ml-[20px] lg:ml-[35px] 2xl:ml-[50px]">
+          <div className="flex-1 hidden md:flex flex-col gap-[10px] lg:gap-[30px] ml-[20px] lg:ml-[35px] 2xl:ml-[50px]">
             {
               data.info.map((item, index) => (
                 <div 
@@ -28,14 +28,14 @@ const ServiceRight = ({ data }) => {
                   </div>
 
                   {/* Right */}
-                  <div className="w-[230px] lg:w-[330px] 2xl:w-[430px] text-[12px] lg:text-[16px] 2xl:text-[20px] text-[#6D6D6D] leading-[19.36px] 2xl:leading-[24px] whitespace-normal 2xl:whitespace-pre-line">{item.desc}</div>
+                  <div className="w-[230px] lg:w-[330px] 2xl:w-[430px] text-[12px] lg:text-[15px] 2xl:text-[20px] text-[#6D6D6D] leading-[19.36px] 2xl:leading-[24px] whitespace-normal 2xl:whitespace-pre-line">{item.desc}</div>
                 </div>
               ))
             }
 
 
             <div className="flex items-center justify-between mt-0 lg:mt-[-20px] 2xl:mt-0">
-              <div className="text-[12px] lg:text-[20px] 2xl:text-[28px] font-[500] text-[#494949] whitespace-pre-line leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+              <div className="text-[12px] lg:text-[20px] 2xl:text-[28px] font-[400] text-[#494949] whitespace-pre-line leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
               {
                 data.hideButton ? '' : <button className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
@@ -59,7 +59,7 @@ const ServiceRight = ({ data }) => {
               data.hideButton &&
               <>
                 <div className="flex items-center justify-between mt-0 lg:mt-[-20px] 2xl:mt-0">
-                  <div className="text-[12px] lg:text-[20px] 2xl:text-[28px] font-[500] text-[#333] whitespace-pre-line leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
+                  <div className="text-[12px] lg:text-[20px] 2xl:text-[28px] font-[400] text-[#333] whitespace-pre-line leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px] tracking-tighter sm:tracking-normal">{data.desc}</div>
 
                   {
                     data.hideButton ? '' : <button className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
@@ -76,7 +76,7 @@ const ServiceRight = ({ data }) => {
             <div className="w-[180px] text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
             {
-              data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[16px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+              data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
             }
           </div>
         }

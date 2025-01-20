@@ -28,7 +28,7 @@ const Case1Page = () => {
     imgRotate: case_1_rotate
   }
   const dataServiceRight = {
-      title: "Условия и цифры",
+      title: "цифры",
       image: case1_1,
       info: [
         {
