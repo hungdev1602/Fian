@@ -19,7 +19,7 @@ const ButtonMore = ({ text, link, customWidth = false, check, setOpenBurgerMenu 
       {/* Thêm class = "switch" vào thẻ cha (phải thêm data-isOn, onMouseEnter, onMouseLeave) */}
       <Link 
         to={link}
-        className="inline-flex items-center justify-between text-[#fff] rounded-[40px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)] switch"
+        className="inline-flex items-center justify-between text-[#fff] rounded-[40px] switch"
         data-isOn={isOn} onMouseEnter={toggleSwitch} onMouseLeave={toggleSwitch}
         customWidth={customWidth ? "yeah" : "nope"}
         onClick={check ? () => setOpenBurgerMenu(false) : null}
