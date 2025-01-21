@@ -235,6 +235,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
                 ))}
               </div>
               <div className="text-[12px] font-[400] leading-[14.5px] text-[#808080]">+7 999 999 99 99</div>
+              <div className="text-[12px] font-[400] leading-[14.5px] text-[#808080] mt-[10px]">fianrealestate@yandex.ru</div>
               <div className="text-[12px] font-[400] leading-[14.5px] text-[#808080] mt-[10px]">Большая тишинская 8 к1 офис 307</div>
             </div>
             {/* ============================= */}

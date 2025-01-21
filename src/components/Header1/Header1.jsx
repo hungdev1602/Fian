@@ -11,7 +11,7 @@ const Header1 = () => {
       // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
       setTimeout(() => {
         window.scrollTo({ top: document.querySelector(href).offsetTop, behavior: 'smooth' });
-      }, 100); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+      }, 300); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
     }
   };
   return (

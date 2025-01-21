@@ -11,7 +11,6 @@ import partner5 from '/images/partner_5.png';
 import partner6 from '/images/partner_6.png';
 import partner7 from '/images/partner_7.png';
 import partner8 from '/images/partner_8.png';
-import partner9 from '/images/partner_9.png';
 // npm install @splidejs/react-splide
 // npm install @splidejs/splide-extension-auto-scroll
 
