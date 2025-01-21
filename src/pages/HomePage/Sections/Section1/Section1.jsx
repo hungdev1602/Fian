@@ -121,7 +121,7 @@ const Section1 = () => {
                   </div>
                 </div>
                 <Link to={data[current].link} className="w-[30px] xl:w-[40px] 2xl:w-[50px] aspect-square bg-[#fff] rounded-full flex items-center justify-center cursor-pointer">
-                  <img src={arrow_share} alt="" className="w-[10px] 2xl:w-[15px] aspect-square object-cover"/>
+                  <img src={arrow_share} alt="" className="w-[20px] sm:w-[35px] aspect-square object-cover"/>
                 </Link>
               </div>
             </div>
