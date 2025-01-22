@@ -90,7 +90,7 @@ const ResidentialPage = () => {
       desc: `Продажа вашей квартиры быстро и на 
       максимально выгодных условиях.`,
       buttonText: "Продать",
-      heightImg: "h-[339px] md:h-[667px] lg:h-[944px] 2xl:h-[1113px]"
+      heightImg: "h-[339px] md:h-[667px] lg:h-[870px] 2xl:h-[1113px]"
   }
   const dataServiceLeft = {
       title: "Покупка квартиры на вторичном рынке",
@@ -148,7 +148,7 @@ const ResidentialPage = () => {
       desc: window.innerWidth > 576 ? `Гарантия безопасности и комфорта, никаких забот, 
       только выгода. Найдем именно ваше жилье.` : "Гарантия безопасности и комфорта, никаких забот, только выгода. ",
       buttonText: "Купить",
-      heightImg: "h-[339px] md:h-[667px] lg:h-[914px] 2xl:h-[1023px]"
+      heightImg: "h-[339px] md:h-[667px] lg:h-[874px] 2xl:h-[1023px]"
   }
   const dataServiceRight1 = {
     title: "Квартиры в новостройке",
@@ -206,7 +206,7 @@ const ResidentialPage = () => {
     desc: `Продажа вашей квартиры быстро и на 
     максимально выгодных условиях.`,
     buttonText: "Купить",
-    heightImg: "h-[339px] md:h-[592px] lg:h-[921px] 2xl:h-[1023px]",
+    heightImg: "h-[339px] md:h-[592px] lg:h-[850px] 2xl:h-[1023px]",
     placeholderColor: "placeholder-[#C1C1C1]"
   }
   return (

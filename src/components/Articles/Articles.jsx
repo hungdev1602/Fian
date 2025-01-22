@@ -4,7 +4,7 @@ import ArticleItem from "./components/ArticleItem/ArticleItem"
 const Articles = () => {
   return (
     <>
-      <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px] h-fit lg:h-[340px] 2xl:h-[450px]">
+      <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px] h-fit">
         <Title title={'Статьи'} />
 
         <div className="flex items-start justify-between flex-wrap md:flex-nowrap gap-[20px] 2xl:gap-0 mt-[35px] sm:mt-[50px]">

@@ -154,7 +154,7 @@ const CommercialPage = () => {
     ],
     desc: `Покупка готового арендного бизнеса, 
     который сразу приносит доход.`,
-    buttonText: "Продать",
+    buttonText: "Купить",
     heightImg: "h-[389px] md:h-[851px] lg:h-[1001px] 2xl:h-[1251px]"
   }
   return (

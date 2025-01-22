@@ -98,7 +98,7 @@ const InvestmentPage = () => {
     desc: window.innerWidth > 576 ? `Минимизируем риски, обеспечиваем высокую 
     доходность, Превращаем недвижимость в актив.` : "Минимизируем риски, обеспечиваем высокую доходность.",
     buttonText: "Инвестировать",
-    heightImg: "h-[439px] md:h-[808px] lg:h-[1169px] 2xl:h-[1295px]"
+    heightImg: "h-[439px] md:h-[808px] lg:h-[1079px] 2xl:h-[1295px]"
   }
   return (
     <>

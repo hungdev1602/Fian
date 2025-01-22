@@ -87,7 +87,7 @@ const ReconstructionPage = () => {
     desc: window.innerWidth > 576 ? `Оптимизируем вашу недвижимость и повысим 
     ее инвестиционную привлекательность.` : "Оптимизируем вашу недвижимость и повысим ее инвестиционную привлекательность.",
     buttonText: "Модернизировать",
-    heightImg: "h-[339px] md:h-[650px] lg:h-[935px] 2xl:h-[1113px]"
+    heightImg: "h-[339px] md:h-[650px] lg:h-[865px] 2xl:h-[1113px]"
   }
   return (
     <>
