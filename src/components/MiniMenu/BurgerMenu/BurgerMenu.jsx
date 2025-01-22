@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 import { IoClose } from "react-icons/io5";
 import FormEmail from "../../FormEmail/FormEmail";
-import burger_home from "/images/burger_home.png"
-import burger_case from "/images/burger_case.png"
-import burger_case_white from "/images/burger_case_white.png"
-import burger_service from "/images/burger_service.png"
-import burger_service_white from "/images/burger_service_white.png"
-import burger_contact from "/images/burger_contact.png"
-import burger_contact_white from "/images/burger_contact_white.png"
-import burger_about from "/images/burger_about.png"
+import burger_home from "/images/burger_home.svg"
+import burger_case from "/images/burger_case.svg"
+import burger_case_white from "/images/burger_case_white.svg"
+import burger_service from "/images/burger_service.svg"
+import burger_service_white from "/images/burger_service_white.svg"
+import burger_contact from "/images/burger_contact.svg"
+import burger_contact_white from "/images/burger_contact_white.svg"
+import burger_about from "/images/burger_about.svg"
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
