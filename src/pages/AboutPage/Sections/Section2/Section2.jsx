@@ -4,6 +4,7 @@ import ExperienceItem from "./components/ExperienceItem/ExperienceItem";
 import MobileSlider from "./components/MobileSlider/MobileSlider";
 
 const Section2 = () => {
+  
   const experienceData = [
     {
       title: "[1989 - 2000]",
