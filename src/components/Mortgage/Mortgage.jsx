@@ -132,7 +132,7 @@ const Mortgage = () => {
             <div className="">
               <img src={mortgage_3} alt="" className="w-[24px] aspect-square object-cover ml-[4%]" />
   
-              <div className="text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Индивидуальный подход</div>
+              <div className="w-[93%] text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Индивидуальный подход</div>
   
               <div className="w-[99%] text-[12px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%] tracking-tighter">{text3}</div>
             </div>
@@ -144,7 +144,7 @@ const Mortgage = () => {
             <div className="">
               <img src={mortgage_4} alt="" className="w-[24px] aspect-square object-cover ml-[4%]" />
   
-              <div className="text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Согласуем после отказов</div>
+              <div className="w-[93%] text-[14px] sm:text-[22px] font-[600] sm:font-[400] mt-[20px] leading-[16.9px] sm:leading-[26.62px] 2xl:leading-[39px] pl-[4%]">Согласуем после отказов</div>
   
               <div className="w-[96%] text-[12px] sm:text-[14px] font-[400] mt-[10px] sm:mt-[20px] leading-[14.5px] sm:leading-[22px] pl-[4%] tracking-tighter">{text4}</div>
             </div>
