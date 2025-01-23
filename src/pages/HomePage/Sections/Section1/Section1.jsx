@@ -3,13 +3,21 @@ import human_black from "/images/human_black.png"
 import human_white from "/images/human_white.png"
 import arrow_share from "/images/arrow_share.svg"
 import ButtonMore from "../../../../components/ButtonMore/ButtonMore"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import SliderSwipwe from "./components/SliderSwipwe"
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import "./style.css"
 import { Link } from "react-router-dom"
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
+
 const Section1 = () => {
+  const swiperRef = useRef(null)
   const [current, setCurrent] = useState(0)
   const [slideIn, setSlideIn] = useState(true);
   const [slideOut, setSlideOut] = useState(false);
@@ -52,14 +60,18 @@ const Section1 = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideOut(true); // Kích hoạt hiệu ứng slide-out
+      setCurrent(prev => prev === data.length - 1 ? 0 : prev + 1)
       setTimeout(() => {
-        setCurrent(prev => prev === data.length - 1 ? 0 : prev + 1)
         setSlideOut(false); // Đặt slideOut về false sau khi đã thay đổi hình ảnh
         setSlideIn(true); // Kích hoạt hiệu ứng slide-in
-      }, 500); // Thời gian nhỏ để đảm bảo hiệu ứng được kích hoạt
+      }, 300); // Thời gian nhỏ để đảm bảo hiệu ứng được kích hoạt
     }, 6000)
     return () => clearInterval(interval)
   },)
+
+  useEffect(() => {
+    swiperRef.current.swiper.slideTo(current);
+  }, [current])
   const handleClick = (number) => {
     setSlideOut(true);
     setCurrent(number);
@@ -67,6 +79,7 @@ const Section1 = () => {
       setSlideOut(false);
       setSlideIn(true);
     }, 500);
+    swiperRef.current.swiper.slideTo(number);
   }
   return (
     <>
@@ -76,10 +89,43 @@ const Section1 = () => {
           <div 
             className={`hidden sm:block w-full lg:w-[480px] xl:w-[576px] 2xl:w-[984px] h-[430px] xl:h-[527px] 2xl:h-[607px] bg-cover rounded-[20px] relative truncate`}
           >
-            <div 
+            <Swiper
+              scrollbar={{
+                hide: true,
+              }}
+              ref={swiperRef}
+              speed={2300}
+              className="mySwiper customSwiper"
+            >
+              <SwiperSlide>
+                <div 
+                  className={`images`}
+                  style={{backgroundImage: images[0]}}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div 
+                  className={`images`}
+                  style={{backgroundImage: images[1]}}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div 
+                  className={`images`}
+                  style={{backgroundImage: images[2]}}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div 
+                  className={`images`}
+                  style={{backgroundImage: images[3]}}
+                />
+              </SwiperSlide>
+            </Swiper>
+            {/* <div 
               className={`images ${slideOut ? 'slide-out' : ''} ${slideIn ? 'slide-in' : ''}`}
               style={{backgroundImage: images[current]}}
-            />
+            /> */}
             {/* contact */}
             <div className="absolute top-[10px] 2xl:top-[20px] right-[10px] 2xl:right-[20px] flex gap-[10px]">
               <div className="w-[150px] 2xl:w-[250px] h-[40px] 2xl:h-[50px] bg-[#ffffffd6] rounded-[40px] flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-[#00000080] hover:text-[#ffffffE6]">Связаться</div>
