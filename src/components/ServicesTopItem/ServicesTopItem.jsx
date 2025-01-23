@@ -72,7 +72,7 @@ const ServicesTopItem = (props) => {
       {/* Left content */}
       <div className="container mx-auto">
         <div className="w-full lg:w-[500px] 2xl:w-[630px] mt-[30px] sm:mt-0 lg:mt-[-456px] xl:mt-[-557px] 2xl:mt-[-685px]">
-          <div className="w-[110%] sm:w-auto font-avenir text-[22px] sm:text-[24px] 2xl:text-[32px] text-[#333333] font-[700] uppercase leading-[20.7px] sm:leading-[25.2px] 2xl:leading-[28.8px]">{dataServiceItemTop.title}</div>
+          <div className="w-[110%] sm:w-auto font-avenir text-[22px] sm:text-[24px] 2xl:text-[32px] text-[#333333] font-[700] uppercase leading-[20.7px] sm:leading-[25.2px] 2xl:leading-[28.8px] tracking-tighter">{dataServiceItemTop.title}</div>
   
           {/* Desc */}
           <div className="mt-[30px] lg:mt-[60px] 2xl:mt-[90px] flex items-center justify-center sm:justify-normal gap-[20px] 2xl:gap-[25px]">
