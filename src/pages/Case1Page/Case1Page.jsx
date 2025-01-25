@@ -57,7 +57,7 @@ const Case1Page = () => {
     lastTitle: "согласование  ДКП и проведение сделки"
   }
   const dataServiceLeft = {
-      title: "Арендный бизнес",
+      title: "Результат",
       image: case1_2,
       info: [
         {

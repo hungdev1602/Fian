@@ -35,7 +35,7 @@ const ServiceLeft = ({ data }) => {
               }
               
 
-              <button className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-base 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+              <button className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-base 2xl:text-[24px] font-[400] text-[#fff] rounded-[40px]">{data.buttonText}</button>
             </div>
           </div>
 

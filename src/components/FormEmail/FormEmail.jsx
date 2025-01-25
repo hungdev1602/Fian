@@ -1,5 +1,8 @@
-import { FaGoogle } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { RiTelegram2Line } from "react-icons/ri";
+import { FaWhatsapp } from "react-icons/fa";
 import form_email from "/images/form_email.png"
+import { Link } from "react-router-dom";
 const FormEmail = ({ check = false }) => {
   const text = `Превратим вашу
   недвижимость в актив`
@@ -14,15 +17,15 @@ const FormEmail = ({ check = false }) => {
 
             {/* google */}
             <div className="flex items-center gap-[10px] mt-[10px] sm:mt-[20px]">
-              <div className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
-                <FaGoogle />
-              </div>
-              <div className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
-                <FaGoogle />
-              </div>
-              <div className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
-                <FaGoogle />
-              </div>
+              <Link to={'/'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
+                <FaInstagram className="sm:text-[24px]"/>
+              </Link>
+              <Link to={'/'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
+                <RiTelegram2Line className="sm:text-[24px]"/>
+              </Link>
+              <Link to={'/'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
+                <FaWhatsapp className="sm:text-[24px]"/>
+              </Link>
             </div>
 
             <form className="w-full mt-[30px] sm:mt-[60px] 2xl:mt-[96px]">
