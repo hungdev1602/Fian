@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import logo from "/images/logo.svg"
+import logo from "/images/new_logo.svg"
+import logo_phone from "/images/new_logo_phone.svg"
 import { useNavigate } from 'react-router-dom';
 const Header1 = () => {
   const navigate = useNavigate()
@@ -17,9 +18,17 @@ const Header1 = () => {
   return (
     <>
       <div className="flex items-center gap-[50px] 2xl:gap-[93px]">
-        <Link to="/" className="w-[30px] h-[35px]">
+        <Link to="/" className="hidden sm:block w-[27px] h-[35px]">
           <img 
             src={logo} 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+        </Link>
+        {/* Mobile Logo */}
+        <Link to="/" className="sm:hidden block w-full">
+          <img 
+            src={logo_phone} 
             alt="" 
             className="w-full h-full object-cover"
           />

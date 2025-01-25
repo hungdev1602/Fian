@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "/images/logo.svg"
+import logo from "/images/new_logo.svg"
 import human_white from "/images/human_white.png"
 import { useNavigate } from 'react-router-dom';
 const Header2 = () => {
@@ -18,7 +18,7 @@ const Header2 = () => {
   return (
     <>
       <div className="flex items-center justify-between">
-        <Link to={'/'} className="inline-block w-[30px] h-[35px] truncate">
+        <Link to={'/'} className="inline-block w-[27px] h-[35px] truncate">
           <img src={logo} alt="" className="w-full h-full object-cover"/>
         </Link>
        

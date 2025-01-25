@@ -224,7 +224,7 @@ const Section1 = () => {
       {/* Left content */}
       <div className="container mx-auto">
         <div className="w-full lg:w-[480px] 2xl:w-[543px] mt-[30px] lg:mt-[-375px] xl:mt-[-460px] 2xl:mt-[-519px] truncate">
-          <div className="font-avenirLight text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[100] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px]">Ваш путь к</div>
+          <div className="font-avenirLight text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[100] uppercase leading-[17px] xl:leading-[25.2px] 2xl:leading-[28.8px]">Ваш путь к</div>
           <div className="font-avenir text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[700] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] text-[#333] mt-0 sm:mt-[10px]">идеальной недвижимости</div>
           <div className="font-avenirLight text-lg sm:text-[24px] xl:text-[28px] 2xl:text-[32px] font-[100] uppercase leading-[20px] xl:leading-[25.2px] 2xl:leading-[28.8px] mt-0 sm:mt-[10px]">начинается здесь</div>
   
