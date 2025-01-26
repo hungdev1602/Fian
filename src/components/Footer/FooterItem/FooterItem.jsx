@@ -1,7 +1,19 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
-
-const FooterItem = ({ title, subMenu = [], check = false }) => {
+import { useNavigate } from 'react-router-dom';
+const FooterItem = ({ title, subMenu = [], check = false, target="_self" }) => {
+  const navigate = useNavigate()
+  const handleScrollToSection = (e, href) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      // Chuyển hướng về trang chính
+      navigate("/");
+      // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
+      setTimeout(() => {
+        window.scrollTo({ top: document.querySelector(href).offsetTop, behavior: 'smooth' });
+      }, 300); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+    }
+  };
   return (
     <>
       <div className="">
@@ -14,6 +26,8 @@ const FooterItem = ({ title, subMenu = [], check = false }) => {
                 key={index}
                 to={item.link}
                 className="text-[12px] sm:text-base 2xl:text-[18px] font-[300] text-[#7A7A7A]"
+                target={target}
+                onClick={(e) => handleScrollToSection(e, item.link)}
               >
                 {item.title}
               </Link>

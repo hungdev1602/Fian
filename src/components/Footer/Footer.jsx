@@ -12,11 +12,11 @@ const Footer = () => {
         },
         {
           title: "Кейсы",
-          link: "/"
+          link: "#cases"
         },
         {
           title: "Услуги",
-          link: "/"
+          link: "#services"
         },
         {
           title: "Об основателе",
@@ -29,19 +29,19 @@ const Footer = () => {
       subMenu: [
         {
           title: "Instagram",
-          link: "/"
+          link: "https://www.instagram.com/rieltor_fadeeva/"
         },
         {
           title: "Telegram",
-          link: "/"
+          link: "https://t.me/rieltor_fadeeva"
         },
         {
           title: "Youtube",
-          link: "/"
+          link: "https://www.youtube.com/@rieltor_fadeeva"
         },
         {
           title: "Whatsapp",
-          link: "/about"
+          link: "https://wa.me/79035442927"
         },
       ]
     },
@@ -70,7 +70,7 @@ const Footer = () => {
       title: "Контакты",
       subMenu: [
         {
-          title: "+7 999 999 99 99"
+          title: "+7 903 544 29 27"
         },
         {
           title: "fianrealestate@yandex.ru"
@@ -93,6 +93,7 @@ const Footer = () => {
                 title={item.title}
                 subMenu={item.subMenu}
                 check={index === footerData.length - 1 ? true : false}
+                target={index === 1 ? "_blank" : "_self"}
               />
             ))
           }

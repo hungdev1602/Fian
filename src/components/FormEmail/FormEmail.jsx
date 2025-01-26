@@ -17,14 +17,14 @@ const FormEmail = ({ check = false }) => {
 
             {/* google */}
             <div className="flex items-center gap-[10px] mt-[10px] sm:mt-[20px]">
-              <Link to={'/'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
-                <FaInstagram className="sm:text-[24px]"/>
+              <Link to={'https://t.me/rieltor_fadeeva'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
+                <RiTelegram2Line className="sm:text-[22px]"/>
               </Link>
-              <Link to={'/'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
-                <RiTelegram2Line className="sm:text-[24px]"/>
+              <Link to={'https://wa.me/79035442927'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
+                <FaWhatsapp className="sm:text-[22px]"/>
               </Link>
-              <Link to={'/'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
-                <FaWhatsapp className="sm:text-[24px]"/>
+              <Link to={'https://www.instagram.com/rieltor_fadeeva/'} target="_blank" className="w-[30px] sm:w-[40px] aspect-square flex items-center justify-center border border-[#000] rounded-[10px]">
+                <FaInstagram className="sm:text-[22px]"/>
               </Link>
             </div>
 

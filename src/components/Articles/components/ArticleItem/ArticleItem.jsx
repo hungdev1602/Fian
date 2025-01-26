@@ -24,7 +24,7 @@ const ArticleItem = ({ question, answer, link, check = false }) => {
           <div className="px-[10px] sm:px-[20px] border-x border-[#aaa] mt-[20px]">
             <div className="text-[12px] xl:text-base 2xl:text-[20px] text-[#494949] font-[400] mb-[20px] 2xl:mb-[40px]">{answer}</div>
   
-            <ButtonMore text={'Читать'} link={link} customWidth={true} />
+            <ButtonMore text={'Читать'} link={link} customWidth={true} target="_blank"/>
           </div>
           <div className="w-full h-[1px] border-t border-[#aaa] mt-[20px]"></div>
         </div>

@@ -11,18 +11,18 @@ const Articles = () => {
           <ArticleItem 
             question={'Что такое коммерция'}
             answer={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae.'}
-            link={'/article'}
+            link={'https://www.litres.ru/book/aleksandr-veshkurcev/lidery-rynka-nedvizhimosti-luchshie-strategii-71515636/'}
             check={true}
           />
           <ArticleItem 
             question={'как заработать на коммерции'}
             answer={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae.'}
-            link={'/article'}
+            link={'https://www.litres.ru/book/aleksandr-veshkurcev/lidery-rynka-nedvizhimosti-luchshie-strategii-71515636/'}
           />
           <ArticleItem 
             question={'Что такое габ'}
             answer={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae.'}
-            link={'/article'}
+            link={'https://www.litres.ru/book/aleksandr-veshkurcev/lidery-rynka-nedvizhimosti-luchshie-strategii-71515636/'}
           />
         </div>
       </div>

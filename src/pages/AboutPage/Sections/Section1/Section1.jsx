@@ -7,28 +7,28 @@ import { FiYoutube } from "react-icons/fi";
 import ButtonMore from "../../../../components/ButtonMore/ButtonMore";
 import MobileSection from "./MobileSection/MobileSection";
 import { GoDotFill } from "react-icons/go";
-
+import vc_ru from "/images/vc-ru.svg"
 const Section1 = () => {
   const socialsData = [
     {
       icon: <RiTelegram2Line className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
-      link: "/",
+      link: "https://t.me/rieltor_fadeeva",
     },
     {
       icon: <FaWhatsapp className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
-      link: "/",
+      link: "https://wa.me/79035442927",
     },
     {
       icon: <FaInstagram className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
-      link: "/",
+      link: "https://www.instagram.com/rieltor_fadeeva/",
     },
     {
-      icon: <FaXTwitter className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
+      icon: <img src={vc_ru} className="w-[20px] sm:w-[22px] 2xl:w-[24px]"/>,
       link: "/",
     },
     {
       icon: <FiYoutube className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
-      link: "/",
+      link: "https://www.youtube.com/@rieltor_fadeeva",
     }
   ]
   return (
@@ -59,6 +59,7 @@ const Section1 = () => {
                     key={index}
                     to={item.link}
                     className="w-[30px] 2xl:w-[45px] aspect-square bg-[#333333] text-[#fff] rounded-full flex items-center justify-center cursor-pointer"
+                    target="_blank"
                   >
                     {item.icon}
                   </Link>
@@ -121,6 +122,7 @@ const Section1 = () => {
                   key={index}
                   to={item.link}
                   className="w-[30px] 2xl:w-[45px] aspect-square bg-[#333333] text-[#fff] rounded-full flex items-center justify-center cursor-pointer"
+                  target="_blank"
                 >
                   {item.icon}
                 </Link>
