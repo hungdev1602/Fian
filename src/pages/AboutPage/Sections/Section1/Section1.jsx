@@ -7,7 +7,7 @@ import { FiYoutube } from "react-icons/fi";
 import ButtonMore from "../../../../components/ButtonMore/ButtonMore";
 import MobileSection from "./MobileSection/MobileSection";
 import { GoDotFill } from "react-icons/go";
-import vc_ru from "/images/vc-ru.svg"
+import vc_ru from "/images/vc-ru.png"
 const Section1 = () => {
   const socialsData = [
     {
@@ -23,7 +23,7 @@ const Section1 = () => {
       link: "https://www.instagram.com/rieltor_fadeeva/",
     },
     {
-      icon: <img src={vc_ru} className="w-[22px] sm:w-[24px]"/>,
+      icon: <img src={vc_ru} className="w-[22px] sm:w-[24px] object-cover"/>,
       link: "https://vc.ru/u/4351525-fadeeva-natalya",
     },
     {
