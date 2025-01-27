@@ -76,7 +76,7 @@ const Footer = () => {
           title: "fianrealestate@yandex.ru"
         },
         {
-          title: "Большая тишинская 8 к1 офис 307",
+          title: "Большая Тишинская 8 к1 офис 307",
           link: `https://yandex.ru/maps/213/moscow/house/bolshoy_tishinskiy_pereulok_8s1/Z04YcwBoSUACQFtvfXt3eXVkbA==/?ll=37.578509%2C55.768827&z=18.5`
         }
       ]

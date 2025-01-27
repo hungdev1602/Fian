@@ -1,5 +1,6 @@
 import FormEmail from "../../components/FormEmail/FormEmail"
 import PartnerCarousel from "../../components/PartnerCarousel/PartnerCarousel"
+import PartnerCarousel2 from "../../components/PartnerCarousel/PartnerCarousel2"
 import Section1 from "./Sections/Section1/Section1"
 import Section3 from "./Sections/Section3/Section3"
 import Section4 from "./Sections/Section4/Section4"
@@ -13,7 +14,7 @@ const HomePage = () => {
         <PartnerCarousel />
       </div>
       <div className="mt-[10px] sm:mt-[30px]">
-        <PartnerCarousel backward={true} />
+        <PartnerCarousel2 />
       </div>
       <div className="container mx-auto">
         <Section3 />

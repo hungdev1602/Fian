@@ -24,7 +24,7 @@ const Section1 = () => {
     },
     {
       icon: <img src={vc_ru} className="w-[20px] sm:w-[22px] 2xl:w-[24px]"/>,
-      link: "/",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya",
     },
     {
       icon: <FiYoutube className="text-[16px] sm:text-[18px] 2xl:text-[24px]"/>,
@@ -130,7 +130,8 @@ const Section1 = () => {
             </div>
             <ButtonMore 
               text="Подробнее"
-              link={'/'}
+              link={'https://www.litres.ru/book/aleksandr-veshkurcev/lidery-rynka-nedvizhimosti-luchshie-strategii-71515636/'}
+              target={"_blank"}
             />
           </div>
 
