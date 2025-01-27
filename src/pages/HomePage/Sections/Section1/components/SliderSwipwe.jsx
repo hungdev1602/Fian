@@ -22,7 +22,7 @@ const SliderSwipwe = ({ current }) => {
   return (
     <>
       <div className="block sm:hidden w-full relative mb-[30px]">
-        <div className="absolute w-[150px] h-[200px]">
+        <div className="absolute w-[170px] h-[200px]">
           <img src={logo_rotate} alt="" className='w-full h-full object-cover'/>
         </div>
         <div className='rotate'>
