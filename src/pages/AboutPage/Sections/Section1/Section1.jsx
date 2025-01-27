@@ -23,7 +23,7 @@ const Section1 = () => {
       link: "https://www.instagram.com/rieltor_fadeeva/",
     },
     {
-      icon: <img src={vc_ru} className="w-[20px] sm:w-[22px] 2xl:w-[24px]"/>,
+      icon: <img src={vc_ru} className="w-[22px] sm:w-[24px]"/>,
       link: "https://vc.ru/u/4351525-fadeeva-natalya",
     },
     {
