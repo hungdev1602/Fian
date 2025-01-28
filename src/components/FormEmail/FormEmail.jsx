@@ -1,11 +1,50 @@
+/* eslint-disable no-unused-vars */
 import { FaInstagram } from "react-icons/fa";
 import { RiTelegram2Line } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 import form_email from "/images/form_email.png"
 import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 const FormEmail = ({ check = false }) => {
+  const form = useRef();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [mail, setMail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // EmailJS service ID, template ID, and public key
+    const serviceId = 'service_hgkewry';
+    const templateId = 'template_g5v3bdp';
+    const publicKey = 'U3HhGXdphIX7wK_ut';
+
+    // object that contains dynamic template params
+    const templateParams = {
+      from_name: name,
+      phone: phone,
+      userMail: mail,
+    };
+
+    // send email
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        setName("");
+        setPhone("");
+        setMail("");
+        toast.success("Письмо успешно отправлено");
+      })
+      .catch((error) => {
+        toast.error('Email sending failed:', error);
+      });
+  }
+
   const text = `Превратим вашу
   недвижимость в актив`
+
+
   return (
     <>
       <div className={`my-[40px] sm:my-[100px] xl:my-[120px] ${check ? "bg-[#F3F3F3]" : "bg-white"} rounded-[20px]`}>
@@ -28,23 +67,29 @@ const FormEmail = ({ check = false }) => {
               </Link>
             </div>
 
-            <form className="w-full mt-[30px] sm:mt-[60px] 2xl:mt-[96px]">
+            <form className="w-full mt-[30px] sm:mt-[60px] 2xl:mt-[96px]" onSubmit={handleSubmit}>
               <input 
                 type="text" 
                 className="w-full border-b border-[#808080] outline-none text-[18px] bg-transparent"
                 placeholder="Имя" 
+                value={name}
+                onChange={e => setName(e.target.value)}
                 required
               />
               <input 
                 type="text" 
                 className="w-full border-b border-[#808080] outline-none text-[18px] mt-[20px] bg-transparent"
                 placeholder="Номер телефона" 
+                value={phone}
+                onChange={e => setPhone(e.target.value)}
                 required
               />
               <input 
                 type="email" 
                 className="w-full border-b border-[#808080] outline-none text-[18px] mt-[20px] bg-transparent"
                 placeholder="Email" 
+                value={mail}
+                onChange={e => setMail(e.target.value)}
                 required
               />
 

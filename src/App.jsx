@@ -13,6 +13,7 @@ import ScrollToTop from "./ScrollToTop";
 import MiniMenu from "./components/MiniMenu/MiniMenu";
 import { useState } from "react";
 import BurgerMenu from "./components/MiniMenu/BurgerMenu/BurgerMenu";
+import { ToastContainer } from 'react-toastify';
 const App = () => {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false)
   return (
@@ -42,6 +43,7 @@ const App = () => {
       <div className="container mx-auto">
         <Footer />
       </div>
+      <ToastContainer />
     </>
   )
 }
