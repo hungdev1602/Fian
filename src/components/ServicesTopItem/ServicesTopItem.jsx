@@ -92,7 +92,7 @@ const ServicesTopItem = (props) => {
             <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[500] text-[#494949] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px] text-center sm:text-left">{dataServiceItemTop.formTitle}</div>
   
             <form className={`w-full xl:w-[474px] 2xl:w-[500px] p-[20px] rounded-[20px] flex flex-col gap-[20px] mt-[10px] sm:mt-[18px] ${dataServiceItemTop.formTextColor}  ${dataServiceItemTop.formColor}`}>
-              <div className="text-[12px] sm:text-base 2xl:text-[18px] font-[400] text-center sm:text-left">[5 прибыльных объектов, которые дадут иксы в 2025]</div>
+              <div className="text-[12px] sm:text-base 2xl:text-[17px] font-[400] text-center sm:text-left tracking-tighter">[Расскажем о том каким должен быть надежный риелтор]</div>
   
               <input type="text" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b ${dataServiceItemTop.borderColor ? dataServiceItemTop.borderColor : "border-[#999]"}  leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor}`} placeholder='Номер телефона'/>
               <input type="email" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b ${dataServiceItemTop.borderColor ? dataServiceItemTop.borderColor : "border-[#999]"} border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor} mt-0 xl:mt-[-10px] 2xl:mt-0`} placeholder='Email'/>
