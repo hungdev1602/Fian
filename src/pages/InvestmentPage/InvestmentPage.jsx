@@ -1,9 +1,12 @@
+import { useState } from "react"
 import Articles from "../../components/Articles/Articles"
 import FormEmail from "../../components/FormEmail/FormEmail"
 import ServiceRight from "../../components/ServiceRight/ServiceRight"
 import ServicesTopItem from "../../components/ServicesTopItem/ServicesTopItem"
 import investment_1 from "/images/investment_1.png"
 import investment_rotate from "/images/investment_rotate.png"
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 const InvestmentPage = () => {
   const dataServiceItemTop = {
     title: "Инвестиции в недвижимость",
@@ -17,16 +20,17 @@ const InvestmentPage = () => {
         subtitle: "[Годовых, при инвестициях]"
       }
     ],
-    formTitle: "Каталог с коммерческой недвижимостью",
-    formColor: "bg-[#C9B09B]",
-    formTextColor: "text-[#FFFFFFCC]",
-    buttonColor: "bg-[#FFFFFF]",
-    buttonTextColor: "text-[#000]",
+    formTitle: "Профессиональный агент по недвижимости",
+    formColor: "bg-[#FFFFFF]",
+    formTextColor: "text-[#333333CC]",
+    formText: "[7 ресурсов для проведения идеальной сделки]",
+    buttonColor: "bg-[#333333]",
+    buttonTextColor: "text-[#fff]",
     backgroundImg: "bg-bgInvestment",
     cards: [],
-    placeholderColor: "placeholder-[#DCCDBF]",
+    placeholderColor: "placeholder-[#B3B3B3]",
     imgRotate: investment_rotate,
-    borderColor: "border-[#E6DBD1]"
+    borderColor: "border-[#B3B3B3]"
   }
   const dataServiceRight = {
     title: window.innerWidth < 576 ? "Инвестируй с нами" : "покупка / Продажа коммерческой недвижимости",
@@ -117,12 +121,59 @@ const InvestmentPage = () => {
       link: "https://vc.ru/u/4351525-fadeeva-natalya/1799174-zhk-novostroiki-v-moskve-dlya-zhizni-ili-zarabotka"
     }
   ]
+  const [phone, setPhone] = useState("");
+  const [mail, setMail] = useState("");
+  console.log(phone, mail)
+  const submitForm = (e) => {
+    e.preventDefault();
+    console.log("OK investment")
+    // Đường dẫn đến file PDF trong thư mục public
+    const fileUrl = '/file/invest_page.pdf'; // File PDF nằm trong thư mục public
+
+    // Tạo một thẻ <a> ẩn để tải xuống file
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = 'ПРОФЕССИОНАЛЬНЫЙ агент по недвижимости.pdf'; // Tên file khi tải xuống
+    document.body.appendChild(a);
+    a.click();
+
+    // Dọn dẹp sau khi tải xuống
+    document.body.removeChild(a);
+
+    // EmailJS service ID, template ID, and public key
+    const serviceId = 'service_hgkewry';
+    const templateId = 'template_g5v3bdp';
+    const publicKey = 'U3HhGXdphIX7wK_ut';
+
+    // object that contains dynamic template params
+    const templateParams = {
+      from_name: "",
+      phone: phone,
+      userMail: mail,
+    };
+
+    // send email
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        setPhone("");
+        setMail("");
+        toast.success("Письмо успешно отправлено");
+      })
+      .catch((error) => {
+        toast.error('Email sending failed:', error);
+      });
+  }
   return (
     <>
       
       {/* Section 1 */}
       <ServicesTopItem 
         dataServiceItemTop={dataServiceItemTop}
+        submitForm={submitForm}
+        phone={phone}
+        setPhone={setPhone}
+        mail={mail}
+        setMail={setMail}
       />
       <div className="container mx-auto">
         {/* Section 2 */}

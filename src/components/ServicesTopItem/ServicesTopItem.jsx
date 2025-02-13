@@ -5,7 +5,12 @@ import logo_rotate from "/images/logo_rotate.png"
 import human_white from "/images/human_white.png"
 const ServicesTopItem = (props) => {
   const {
-    dataServiceItemTop
+    dataServiceItemTop,
+    submitForm,
+    phone,
+    setPhone,
+    mail,
+    setMail
   } = props;
   return (
     <>
@@ -91,13 +96,31 @@ const ServicesTopItem = (props) => {
           <div className="mt-[30px] xl:mt-[60px] 2xl:mt-[90px]">
             <div className="text-[16px] sm:text-[20px] 2xl:text-[24px] font-[500] text-[#494949] leading-[19.36px] sm:leading-[24.2px] 2xl:leading-[29px] text-center sm:text-left">{dataServiceItemTop.formTitle}</div>
   
-            <form className={`w-full xl:w-[474px] 2xl:w-[500px] p-[20px] rounded-[20px] flex flex-col gap-[20px] mt-[10px] sm:mt-[18px] ${dataServiceItemTop.formTextColor}  ${dataServiceItemTop.formColor}`}>
-              <div className="text-[12px] sm:text-base 2xl:text-[17px] font-[400] text-center sm:text-left tracking-tighter">[Расскажем о том каким должен быть надежный риелтор]</div>
+            <form 
+              className={`w-full xl:w-[474px] 2xl:w-[500px] p-[20px] rounded-[20px] flex flex-col gap-[20px] mt-[10px] sm:mt-[18px] ${dataServiceItemTop.formTextColor}  ${dataServiceItemTop.formColor}`}
+              onSubmit={submitForm}
+            >
+              <div className="text-[12px] sm:text-base 2xl:text-[17px] font-[400] text-center sm:text-left tracking-tighter">{dataServiceItemTop.formText ? dataServiceItemTop.formText :"[Расскажем о том каким должен быть надежный риелтор]"}</div>
   
-              <input type="text" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b ${dataServiceItemTop.borderColor ? dataServiceItemTop.borderColor : "border-[#999]"}  leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor}`} placeholder='Номер телефона'/>
-              <input type="email" className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b ${dataServiceItemTop.borderColor ? dataServiceItemTop.borderColor : "border-[#999]"} border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor} mt-0 xl:mt-[-10px] 2xl:mt-0`} placeholder='Email'/>
+              <input 
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                type="text" 
+                className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b ${dataServiceItemTop.borderColor ? dataServiceItemTop.borderColor : "border-[#999]"}  leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor}`} placeholder='Номер телефона'
+              />
+              <input 
+                value={mail}
+                onChange={(e) => setMail(e.target.value)}
+                type="email" 
+                className={`text-base 2xl:text-[18px] font-[500] bg-transparent outline-none pb-[5px] border-b ${dataServiceItemTop.borderColor ? dataServiceItemTop.borderColor : "border-[#999]"} border-[#999] leading-[19.36px] 2xl:leading-[21.7px] ${dataServiceItemTop.placeholderColor} mt-0 xl:mt-[-10px] 2xl:mt-0`} placeholder='Email'
+              />
   
-              <button className={`w-full sm:w-[150px] 2xl:w-[200px] h-[50px] rounded-[40px] ${dataServiceItemTop.buttonColor} text-sm 2xl:text-[20px] font-[400] ${dataServiceItemTop.buttonTextColor} mt-0 xl:mt-[-3px] 2xl:mt-0`}>Получить</button>
+              <button 
+                type="submit"
+                className={`w-full sm:w-[150px] 2xl:w-[200px] h-[50px] rounded-[40px] ${dataServiceItemTop.buttonColor} text-sm 2xl:text-[20px] font-[400] ${dataServiceItemTop.buttonTextColor} mt-0 xl:mt-[-3px] 2xl:mt-0`}
+              >
+                Получить
+              </button>
             </form>
           </div>
   

@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Articles from "../../components/Articles/Articles"
 import FormEmail from "../../components/FormEmail/FormEmail"
 import ServiceLeft from "../../components/ServiceLeft/ServiceLeft"
@@ -6,7 +7,8 @@ import ServicesTopItem from "../../components/ServicesTopItem/ServicesTopItem"
 import commercial_1 from "/images/commercial_1.png"
 import commercial_2 from "/images/commercial_2.png"
 import commercial_rotate from "/images/commercial_rotate.png"
-
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 const CommercialPage = () => {
   const dataServiceItemTop = {
     title: "Коммерческая недвижимость",
@@ -175,12 +177,60 @@ const CommercialPage = () => {
       link: "https://vc.ru/u/4351525-fadeeva-natalya/1793322-pochemu-kommercheskaya-nedvizhimost-schitaetsya-samoi-dohodnoi-na-rynke"
     }
   ]
+
+  const [phone, setPhone] = useState("");
+  const [mail, setMail] = useState("");
+  console.log(phone, mail)
+  const submitForm = (e) => {
+    e.preventDefault();
+    console.log("OK commercial")
+    // Đường dẫn đến file PDF trong thư mục public
+    const fileUrl = '/file/commercial.pdf'; // File PDF nằm trong thư mục public
+
+    // Tạo một thẻ <a> ẩn để tải xuống file
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = 'Путеводитель по выбору надежного агента.pdf'; // Tên file khi tải xuống
+    document.body.appendChild(a);
+    a.click();
+
+    // Dọn dẹp sau khi tải xuống
+    document.body.removeChild(a);
+
+    // EmailJS service ID, template ID, and public key
+    const serviceId = 'service_hgkewry';
+    const templateId = 'template_g5v3bdp';
+    const publicKey = 'U3HhGXdphIX7wK_ut';
+
+    // object that contains dynamic template params
+    const templateParams = {
+      from_name: "",
+      phone: phone,
+      userMail: mail,
+    };
+
+    // send email
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        setPhone("");
+        setMail("");
+        toast.success("Письмо успешно отправлено");
+      })
+      .catch((error) => {
+        toast.error('Email sending failed:', error);
+      });
+  }
   return (
     <>
       
       {/* Section 1 */}
       <ServicesTopItem 
         dataServiceItemTop={dataServiceItemTop}
+        submitForm={submitForm}
+        phone={phone}
+        setPhone={setPhone}
+        mail={mail}
+        setMail={setMail}
       />
       <div className="container mx-auto">
         {/* Section 2 */}
