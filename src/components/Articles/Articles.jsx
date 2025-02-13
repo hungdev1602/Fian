@@ -1,28 +1,31 @@
 import Title from "../Title/Title"
 import ArticleItem from "./components/ArticleItem/ArticleItem"
 
-const Articles = () => {
+const Articles = ({ articleArray }) => {
   return (
     <>
       <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px] h-fit">
         <Title title={'Статьи'} />
 
-        <div className="flex items-start justify-between flex-wrap md:flex-nowrap gap-[20px] 2xl:gap-0 mt-[35px] sm:mt-[50px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px] 2xl:gap-0 mt-[35px] sm:mt-[50px]">
           <ArticleItem 
-            question={'Что такое коммерция'}
-            answer={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae.'}
-            link={'https://www.litres.ru/book/aleksandr-veshkurcev/lidery-rynka-nedvizhimosti-luchshie-strategii-71515636/'}
+            question={articleArray[0].question}
+            answer={articleArray[0].answer}
+            link={articleArray[0].link}
             check={true}
+            className="flex-1"
           />
           <ArticleItem 
-            question={'как заработать на коммерции'}
-            answer={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae.'}
-            link={'https://www.litres.ru/book/aleksandr-veshkurcev/lidery-rynka-nedvizhimosti-luchshie-strategii-71515636/'}
+            question={articleArray[1].question}
+            answer={articleArray[1].answer}
+            link={articleArray[1].link}
+            className="flex-1"
           />
           <ArticleItem 
-            question={'Что такое габ'}
-            answer={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae.'}
-            link={'https://www.litres.ru/book/aleksandr-veshkurcev/lidery-rynka-nedvizhimosti-luchshie-strategii-71515636/'}
+            question={articleArray[2].question}
+            answer={articleArray[2].answer}
+            link={articleArray[2].link}
+            className="flex-1"
           />
         </div>
       </div>

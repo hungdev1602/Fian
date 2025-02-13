@@ -100,6 +100,23 @@ const InvestmentPage = () => {
     buttonText: "Инвестировать",
     heightImg: "h-[439px] md:h-[808px] lg:h-[1079px] 2xl:h-[1295px]"
   }
+  const articleData = [
+    {
+      question: "что такое инвестиции?",
+      answer: "Инвестиция - это вложение средств в нашем случае денег с целью получить прибыль или выгоды в будущем.ㅤㅤㅤㅤㅤ",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1773156-investiciya-eto-chto"
+    },
+    {
+      question: "Инвестиции в недвижимость",
+      answer: "Недвижимость — один из самых надежных и понятных активов для большинства людей на планете.ㅤㅤㅤㅤㅤ",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1772449"
+    },
+    {
+      question: "Новостройки москвы",
+      answer: "Этот вопрос сегодня на повестке дня на Столичном рынке недвижимости. Москва — это город, который никогда не спит...",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1799174-zhk-novostroiki-v-moskve-dlya-zhizni-ili-zarabotka"
+    }
+  ]
   return (
     <>
       
@@ -114,7 +131,7 @@ const InvestmentPage = () => {
         />
 
         {/* Section 3 */}
-        <Articles />
+        <Articles articleArray={articleData} />
 
         <FormEmail />
       </div>

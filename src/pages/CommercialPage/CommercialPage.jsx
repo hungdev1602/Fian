@@ -157,6 +157,24 @@ const CommercialPage = () => {
     buttonText: "Купить",
     heightImg: "h-[389px] md:h-[851px] lg:h-[1001px] 2xl:h-[1251px]"
   }
+
+  const articleData = [
+    {
+      question: "Куда стоит инвестировать в 2025?",
+      answer: "Мой ответ конечно коммерческая. Во все времена она зарекомендовала себя на порядок выше жилой. В конце статьи приведу примеры",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1776990-kakaya-nedvizhimost-dohodnaya-i-kuda-stoit-investirovat-pochemu-kommercheskaya-nedvizhimost"
+    },
+    {
+      question: "Как вырастить недвижимость",
+      answer: "Многие инвесторы заблуждаются, думая, что любая недвижимость является гарантией пассивного дохода.",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1792995-kak-nedvizhimost-vyrastit-v-aktiv"
+    },
+    {
+      question: "Почему коммерция самая доходная",
+      answer: "Высокий потенциал роста арендной платы, особенно в перспективных отношениях или при росте бизнеса. ㅤㅤㅤㅤㅤㅤㅤ",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1793322-pochemu-kommercheskaya-nedvizhimost-schitaetsya-samoi-dohodnoi-na-rynke"
+    }
+  ]
   return (
     <>
       
@@ -170,7 +188,7 @@ const CommercialPage = () => {
           data={dataServiceRight}
         />
         {/* Section 3 */}
-        <Articles />
+        <Articles articleArray={articleData} />
 
         {/* Section 4 */}
         <ServiceLeft 

@@ -209,6 +209,24 @@ const ResidentialPage = () => {
     heightImg: "h-[339px] md:h-[592px] lg:h-[850px] 2xl:h-[1023px]",
     placeholderColor: "placeholder-[#C1C1C1]"
   }
+
+  const articleData = [
+    {
+      question: "Жилая недвижимость",
+      answer: "Рынок жилой недвижимости — это объекты, предназначенные для проживания людей.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1790978-zhilaya-nedvizhimost"
+    },
+    {
+      question: "Вторичный рынок Москвы",
+      answer: "Вторичный рынок недвижимости простым языком — это объекты, которые уже находятся в собственности у владельцев.",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1790506-vtorichnyi-rynok-nedvizhimosti-v-moskve"
+    },
+    {
+      question: "Тренды и перспективы",
+      answer: "Москва — это не только столица России, но и город, который привлекает людей со всех уголков страны.ㅤㅤㅤㅤㅤㅤㅤㅤ",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1793410-zhilaya-nedvizhimost-moskvy-trendy-vozmozhnosti-i-perspektivy"
+    }
+  ]
   return (
     <>
       
@@ -231,7 +249,7 @@ const ResidentialPage = () => {
         />
 
         {/* Section 5 */}
-        <Articles />
+        <Articles articleArray={articleData} />
 
         {/* Section 6 */}
         <ServiceRight 

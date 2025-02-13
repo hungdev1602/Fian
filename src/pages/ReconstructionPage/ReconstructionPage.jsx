@@ -89,6 +89,23 @@ const ReconstructionPage = () => {
     buttonText: "Модернизировать",
     heightImg: "h-[339px] md:h-[650px] lg:h-[865px] 2xl:h-[1113px]"
   }
+  const articleData = [
+    {
+      question: "Что нужно знать о перепланировке",
+      answer: "Перепланировка - это изменение его внутренней конфигурации,\nРеконструкция - это изменение внешнего контура строения...",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1779371-pereplanirovka-i-rekonstrukciya-chto-eto-pochemu-o-nei-nado-znat"
+    },
+    {
+      question: "Инструмент доходности",
+      answer: "Перепланировка - это изменение его внутренней конфигурации,\nРеконструкция - это изменение внешнего контура строения...",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1782648-pereplanirovka-kak-instrument-dohodnosti"
+    },
+    {
+      question: "Перепланировка без хлопот",
+      answer: "Как законные изменения в любом объекте, обеспечивают комфорт и ценность вашей недвижимости, увеличивают стоимость.",
+      link: "https://vc.ru/u/4351525-fadeeva-natalya/1797292-pereplanirovka-bez-hlopot-kak-zakonnye-izmeneniya-v-lyubom-obekte-obespechivayut-komfort-i-cennost-vashei-nedvizhimosti-uvelichivayut-stoimost"
+    }
+  ]
   return (
     <>
       
@@ -103,7 +120,7 @@ const ReconstructionPage = () => {
         />
 
         {/* Section 3 */}
-        <Articles />
+        <Articles articleArray={articleData} />
 
         <FormEmail />
       </div>
