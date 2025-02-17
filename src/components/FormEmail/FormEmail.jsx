@@ -47,7 +47,7 @@ const FormEmail = ({ check = false }) => {
 
   return (
     <>
-      <div className={`my-[40px] ${check ? "my-0" : "sm:my-[100px] xl:my-[120px]"} ${check ? "bg-[#F3F3F3]" : "bg-white"} rounded-[20px]`}>
+      <div className={`${check ? "my-0" : "sm:my-[100px] xl:my-[120px]"} ${check ? "bg-[#F3F3F3]" : "bg-white"} rounded-[20px]`}>
         <div className="flex justify-between">
           {/* Left */}
           <div className="w-full lg:w-[460px] py-[20px] sm:py-[40px] pl-[20px] sm:pl-[40px] pr-[20px] sm:pr-[40px] lg:pr-0">

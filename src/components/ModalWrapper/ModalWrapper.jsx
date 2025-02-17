@@ -45,7 +45,7 @@ export const ModalWrapper = ({ isOpen, onClose, children }) => {
   return (
     <div className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50`} onClick={onClose}>
       <div
-        className={`relative bg-white rounded-lg shadow-lg p-3 sm:p-6 w-[90%] sm:w-auto md:max-w-[75%] md:max-h-[95vh] xs:max-w-[90%] xs:max-h-[95%] overflow-y-auto`}
+        className={`relative bg-transparent rounded-lg sm:w-auto md:max-w-[75%] md:max-h-[95vh] xs:max-w-[90%] xs:max-h-[95%] overflow-y-auto`}
         onClick={(e) => e.stopPropagation()} // Предотвращает закрытие при клике на контент
       >
         {children}
