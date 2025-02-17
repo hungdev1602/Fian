@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react"
+import FormEmail from "../FormEmail/FormEmail"
+import { ModalWrapper } from "../ModalWrapper/ModalWrapper"
 import Title from "../Title/Title"
 import MobileAccordion from "./MobileAccordion/MobileAccordion"
 const ServiceRight = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div className="mt-[40px] sm:mt-[100px] 2xl:mt-[120px]">
@@ -38,7 +42,7 @@ const ServiceRight = ({ data }) => {
               <div className="text-[12px] lg:text-[20px] 2xl:text-[28px] font-[400] text-[#494949] whitespace-pre-line leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
               {
-                data.hideButton ? '' : <button className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+                data.hideButton ? '' : <button onClick={() => setIsOpen(true)} className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
               }
             </div>
           </div>
@@ -62,7 +66,7 @@ const ServiceRight = ({ data }) => {
                   <div className="text-[12px] lg:text-[20px] 2xl:text-[28px] font-[400] text-[#333] whitespace-pre-line leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px] tracking-tighter sm:tracking-normal">{data.desc}</div>
 
                   {
-                    data.hideButton ? '' : <button className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+                    data.hideButton ? '' : <button onClick={() => setIsOpen(true)} className="w-[200px] 2xl:w-[350px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
                   }
                 </div>
               </>
@@ -76,12 +80,19 @@ const ServiceRight = ({ data }) => {
             <div className="w-[180px] text-[12px] font-[500] text-[#333] leading-[14.52px] lg:leading-[24.2px] 2xl:leading-[34px]">{data.desc}</div>
 
             {
-              data.hideButton ? '' : <button className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
+              data.hideButton ? '' : <button 
+                                      onClick={() => setIsOpen(true)} className="w-[165px] h-[40px] lg:h-[50px] 2xl:h-[75px] bg-[#333333] text-[14px] 2xl:text-[24px] font-[500] text-[#fff] rounded-[40px]">{data.buttonText}</button>
             }
           </div>
         }
         
       </div>
+      <ModalWrapper
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      >
+        <FormEmail check={true}/>
+      </ModalWrapper>
     </>
   )
 }
