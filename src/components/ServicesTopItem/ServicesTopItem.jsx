@@ -35,7 +35,7 @@ const ServicesTopItem = (props) => {
                     dataServiceItemTop.cards.map((item, index) => (
                       <div 
                         key={index}
-                        className="w-[135px] 2xl:w-[200px] h-[40px] 2xl:h-[50px] rounded-[40px] flex items-center justify-center text-sm 2xl:text-base bg-[#ffffffe6] pt-[5px] 2xl:pt-0"
+                        className="w-[135px] 2xl:w-[200px] h-[40px] 2xl:h-[50px] rounded-[40px] flex items-center justify-center text-sm 2xl:text-base bg-[#ffffffe6] 2xl:pt-0"
                       >
                         {item}
                       </div>
@@ -76,7 +76,7 @@ const ServicesTopItem = (props) => {
       
       {/* Left content */}
       <div className="container mx-auto">
-        <div className="w-full lg:w-[500px] 2xl:w-[630px] mt-[30px] sm:mt-0 lg:mt-[-456px] xl:mt-[-557px] 2xl:mt-[-685px]">
+        <div className="w-full lg:w-[500px] 2xl:w-[630px] mt-[30px] sm:mt-0 lg:mt-[-456px] xl:mt-[-568px] 2xl:mt-[-685px]">
           <div className="w-[110%] sm:w-auto font-avenir text-[22px] sm:text-[24px] 2xl:text-[32px] text-[#333333] font-[700] uppercase leading-[20.7px] sm:leading-[25.2px] 2xl:leading-[28.8px] tracking-tighter">{dataServiceItemTop.title}</div>
   
           {/* Desc */}

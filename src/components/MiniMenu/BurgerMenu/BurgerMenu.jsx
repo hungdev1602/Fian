@@ -120,7 +120,7 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
           </div>
 
           {/* menu item */}
-          <div className="mt-[30px]">
+          <div className="mt-[30px] mb-10">
             {/* Главная */}
             <Link 
               to="/" 
