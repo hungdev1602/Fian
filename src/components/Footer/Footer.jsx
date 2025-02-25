@@ -107,13 +107,13 @@ const Footer = () => {
             Политика конфиденциальности
           </Link>
 
-          <div className="text-[8px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase">Fian - финансово - инвестиционное агентство недижимости</div>
+          <div className="text-[8px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase">Fian - финансово - инвестиционное агентство недвижимости</div>
           {/* <div className="text-[14px] font-[500] text-[#c8c8c8] uppercase">Made by me on 20th 2024</div> */}
         </div>
 
         {/* mobile */}
         <div className="block sm:hidden w-[157px] absolute bottom-0 right-0 flex flex-col gap-[10px] pl-6">
-          <div className="text-[6px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase">Fian - финансово - инвестиционное агентство недижимости</div>
+          <div className="text-[6px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase">Fian - финансово - инвестиционное агентство недвижимости</div>
           <Link 
             to={'/'}
             className='text-[6px] sm:text-[14px] font-[500] text-[#c8c8c8] uppercase'

@@ -19,7 +19,7 @@ const Section4 = () => {
     },
     {
       background: 'bg-bg3',
-      title: `БЦ Баумонский`,
+      title: `БЦ Бауманский`,
       width: `w-full lg:w-[300px] xl:w-[330px] 2xl:w-[480px]`,
       cards: [window.innerWidth < 1600 ? 'ГАБ' : 'Продажа ГАБ', 'Капитализация'],
       link: `/case3`,

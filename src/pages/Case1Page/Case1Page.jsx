@@ -53,7 +53,7 @@ const Case1Page = () => {
   }
   const processData = {
     price: "100.000.000 руб.",
-    bc: "БЦ Барклай плаза",
+    bc: "БЦ Барклай Плаза",
     lastTitle: "согласование  ДКП и проведение сделки"
   }
   const dataServiceLeft = {

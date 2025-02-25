@@ -137,7 +137,7 @@ const Section1 = () => {
   
             {/* change state */}
             <div className="h-[80px] xl:h-[90px] 2xl:h-[144px] absolute bottom-0 left-0 right-0 bg-[#0000002b] py-[10px] 2xl:py-[20px] px-[10px]">
-              <div className="text-[13px] xl:text-[16px] 2xl:text-[27px] font-[400] font-avenirThin text-[#fff] uppercase leading-[20px] 2xl:leading-[34px]">FIAN - финансово инвестиционное агентсво недвижимости</div>
+              <div className="text-[13px] xl:text-[16px] 2xl:text-[27px] font-[400] font-avenirThin text-[#fff] uppercase leading-[20px] 2xl:leading-[34px]">FIAN - финансово инвестиционное агентство недвижимости</div>
               <div className="flex justify-between items-center mt-[10px] 2xl:mt-[20px]">
                 <div className="flex items-center gap-[10px]">
                   {/* when change data, change bg, if active bg-[#00000087] else bg-[#ffffffdb] */}

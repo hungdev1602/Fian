@@ -17,7 +17,7 @@ import case_3_rotate from "/images/case_3_rotate.png"
 
 const Case3Page = () => {
   const dataServiceItemTop = {
-    title: "БЦ «Баумонский»",
+    title: "БЦ «Бауманский»",
     desc: [
       {
         title: "19 000 000",
@@ -69,7 +69,7 @@ const Case3Page = () => {
   }
   const processData = {
     price: "19.000.000 руб.",
-    bc: "БЦ БАУМОНСКИЙ",
+    bc: "БЦ БАУМАНСКИЙ",
     lastTitle: "согласование  ДКП"
   }
   const dataServiceLeft = {
