@@ -18,7 +18,7 @@ const Header1 = () => {
   return (
     <>
       <div className="flex items-center gap-[50px] 2xl:gap-[93px]">
-        <Link to="/" className="hidden sm:block w-[35px] xl:w-[40px] h-[50px] xl:h-[55px]">
+        <Link to="/" className="hidden sm:block w-[35px] xl:w-[40px] h-[50px] xl:h-[55px] ">
           <img 
             src={logo} 
             alt="" 
